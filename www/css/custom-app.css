@@ -1,0 +1,14 @@
+.loginBg{
+
+background: #FAFAFA;
+
+}
+
+.app-logo{ max-width:100px; margin:auto; background-repeat:no-repeat;background-position:center;}
+.top-content { padding-top: 10vh;  text-align: center;   }
+.loginButton{ padding-bottom:0px;}
+.remvoeBP{ padding-bottom:0px;}
+.removePM{ margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; }
+
+#menuLinks .list .item{ border-color:#787D67;}
+#menuLinks .list .item a{ background:#868D72; color:#fff;}

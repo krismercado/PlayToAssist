@@ -1,0 +1,23 @@
+<ion-view view-title="Sign In" class="loginBg" hide-nav-bar="true" >
+<!-- <ion-nav-title><img src="img/logo.png" width="40"></ion-nav-title> -->
+
+  <ion-content class="padding">
+
+  <div class="row responsive-sm padding remvoeBP">
+	  <div class="col">
+			<div class="app-logo"><img src="img/logo.png"></div> 
+			<div>    <center><h1><b>Play to Assist</b></h1></center></div> <br>
+			<div class="list removePM">
+			  <label class="item item-input item-floating-label">
+                  <span class="input-label">Username</span>
+                  <input type="text" ng-model="user.username" placeholder="Username" > </label>
+			  <label class="item item-input item-floating-label">
+                   <span class="input-label">Password</span>
+                  <input type="password" ng-model="user.password" placeholder="Password" > </label>
+			</div>
+
+			<div class="loginButton"><button class="button button-block button-royal" ng-click="login(user);" > Login </button>  </div>
+	  </div>
+  </div>
+  </ion-content>
+</ion-view>
