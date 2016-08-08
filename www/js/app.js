@@ -78,6 +78,17 @@ angular.module('starter', ['ionic', 'starter.controllers' , 'starter.services'])
      },
 	 authStatus: true
   })
+  
+   .state('app.hygene', {
+    url: '/hygene',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/hygene.html',
+		controller: 'DashCtrl'
+      }
+     },
+	 authStatus: true
+  })
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/login');
