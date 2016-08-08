@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('AppCtrl', function($scope, $ionicModal, $ionicPopover, $timeout,  $location, $ionicPopup) {
+.controller('AppCtrl', function($scope, $ionicModal, $ionicPopover, $timeout,  $location, $ionicPopup, $http) {
 
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
@@ -15,15 +15,37 @@ angular.module('starter.controllers', [])
   //--------------------------------------------
    $scope.login = function(user) {
 			
+		$http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
+       $http({
+          method: 'POST',
+          url: 'http://assistwebportal.com/main/applogin',
+           transformRequest: function(obj) {
+            var str = [];
+            for(var p in obj)
+            str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+            return str.join("&");
+           },
+          data: { username: user.username,password:user.password }
+        }).then(function successCallback(response) {
+            //$scope.user = response.data;
+           user.validate = response.data;
+           console.log(user.validate);
+           
+           if(user.validate != 'false'){
+			$location.path('/app/dashboard');
+            }else{
+                $scope.showAlert('Invalid username or password.');	
+            }
+          }, function errorCallback(response) {
+            // called asynchronously if an error occurs
+            // or server returns response with an error status.
+           console.log('error');
+       });
+       
+
 		if(typeof(user)=='undefined'){
 			$scope.showAlert('Please fill username and password to proceed.');	
 			return false;
-		}
-
-		if(user.username=='krismercado' && user.password=='demo'){
-			$location.path('/app/dashboard');
-		}else{
-			$scope.showAlert('Invalid username or password.');	
 		}
 		
 	};
