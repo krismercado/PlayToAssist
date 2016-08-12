@@ -30,7 +30,7 @@ angular.module('starter.controllers', [])
             //$scope.user = response.data;
            user.validate = response.data;
            console.log(user.validate);
-           
+          
            if(user.validate != 'false'){
 			$location.path('/app/dashboard');
             }else{
@@ -41,16 +41,16 @@ angular.module('starter.controllers', [])
             // or server returns response with an error status.
            console.log('error');
        });
-       
 
 		if(typeof(user)=='undefined'){
 			$scope.showAlert('Please fill username and password to proceed.');	
 			return false;
 		}
-		
 	};
+
   //--------------------------------------------
-  $scope.logout = function() {   $location.path('/app/login');   };
+  $scope.logout = function() {    $window.location.reload('/app/login');   };
+
   //--------------------------------------------
    // An alert dialog
 	 $scope.showAlert = function(msg) {

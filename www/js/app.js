@@ -89,6 +89,28 @@ angular.module('starter', ['ionic', 'starter.controllers' , 'starter.services'])
      },
 	 authStatus: true
   })
+  
+  .state('app.stories', {
+    url: '/stories',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/stories.html',
+		controller: 'DashCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.tutorials', {
+    url: '/tutorials',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/tutorials.html',
+		controller: 'DashCtrl'
+      }
+     },
+	 authStatus: true
+  })
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/login');
