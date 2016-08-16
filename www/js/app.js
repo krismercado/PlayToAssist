@@ -90,23 +90,41 @@ angular.module('starter', ['ionic', 'starter.controllers' , 'starter.services'])
 	 authStatus: true
   })
   
+<<<<<<< HEAD
   .state('app.shapes', {
     url: '/shapes',
     views: {
       'menuContent': {
         templateUrl: 'templates/shapes.html',
 		controller: 'TutorialCtrl'
+=======
+  .state('app.stories', {
+    url: '/stories',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/stories.html',
+		controller: 'DashCtrl'
+>>>>>>> 789ef9521b177b604ec38b8190aaeb6808109ce5
       }
      },
 	 authStatus: true
   })
   
+<<<<<<< HEAD
   .state('app.tutorial', {
     url: '/tutorial',
     views: {
       'menuContent': {
         templateUrl: 'templates/tutorial.html',
 		controller: 'TutorialCtrl'
+=======
+  .state('app.tutorials', {
+    url: '/tutorials',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/tutorials.html',
+		controller: 'DashCtrl'
+>>>>>>> 789ef9521b177b604ec38b8190aaeb6808109ce5
       }
      },
 	 authStatus: true

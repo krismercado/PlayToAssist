@@ -13,11 +13,18 @@
                   <input type="text" ng-model="user.username" placeholder="Username" > </label>
 			  <label class="item item-input item-floating-label">
                    <span class="input-label">Password</span>
-                  <input type="password" ng-model="user.password" placeholder="Password" > </label>
+                  <input type="password" ng-model="user.password" placeholder="Password" onClick="clearfunction" > </label>
 			</div>
 
 			<div class="loginButton"><button class="button button-block button-royal" ng-click="login(user);" > Login </button>  </div>
 	  </div>
   </div>
+      <script> 
+          function clearform()
+{
+    document.getElementById("Username").value=""; 
+    document.getElementById("Password").value="";
+}
+      </script>
   </ion-content>
 </ion-view>
