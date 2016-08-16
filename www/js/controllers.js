@@ -62,8 +62,84 @@ angular.module('starter.controllers', [])
   //--------------------------------------------
 })
 
-.controller('TutorialCtrl', function($scope, $stateParams , Profiles) {
-	$scope.profile = Profiles.get($stateParams.profileId);
+.controller('ShapesCtrl', function($scope, $stateParams , Profiles) {
+	var initial_state = false;
+   
+    $scope.decagonisVisible = initial_state;
+    $scope.nonagonisVisible = initial_state;
+    $scope.octagonisVisible = initial_state;
+    $scope.heptagonisVisible = initial_state;
+    $scope.hexagonisVisible = initial_state;
+    $scope.pentagonisVisible = initial_state;
+    $scope.rectangleisVisible = initial_state;
+    $scope.parallelogramisVisible = initial_state;
+    $scope.rhombusisVisible = initial_state;
+    $scope.diamondisVisible = initial_state;
+    $scope.trapeziumisVisible = initial_state;
+    $scope.squareisVisible = initial_state;
+    $scope.traingleisVisible = initial_state;
+    $scope.ovalisVisible = initial_state;
+    $scope.circleisVisible = initial_state;
+    
+    $scope.decagon = function(){
+        $scope.decagonisVisible = !$scope.decagonisVisible;
+    }
+    
+    $scope.nonagon = function(){
+        $scope.nonagonisVisible = !$scope.nonagonisVisible;
+    }
+    
+    $scope.octagon = function(){
+        $scope.octagonisVisible = !$scope.octagonisVisible;
+    }
+    
+    $scope.heptagon = function(){
+        $scope.heptagonisVisible = !$scope.heptagonisVisible;
+    }
+    
+    $scope.hexagon = function(){
+        $scope.hexagonisVisible = !$scope.hexagonisVisible;
+    }
+    
+    $scope.pentagon = function(){
+        $scope.pentagonisVisible = !$scope.pentagonisVisible;
+    }
+    
+    $scope.rectangle = function(){
+        $scope.rectangleisVisible = !$scope.rectangleisVisible;
+    }
+    
+    $scope.parallelogram = function(){
+        $scope.parallelogramisVisible = !$scope.parallelogramisVisible;
+    }
+    
+    $scope.rhombus = function(){
+        $scope.rhombusisVisible = !$scope.rhombusisVisible;
+    }
+    
+    $scope.diamond = function(){
+        $scope.diamondisVisible = !$scope.diamondisVisible;
+    }
+    
+    $scope.trapezium = function(){
+        $scope.trapeziumisVisible = !$scope.trapeziumisVisible;
+    }
+    
+    $scope.square = function(){
+        $scope.squareisVisible = !$scope.squareisVisible;
+    }
+    
+    $scope.traingle = function(){
+        $scope.traingleisVisible = !$scope.traingleisVisible;
+    }
+    
+    $scope.oval = function(){
+        $scope.ovalisVisible = !$scope.ovalisVisible;
+    }
+    
+    $scope.circle = function(){
+        $scope.circleisVisible = !$scope.circleisVisible;
+    }
 })
 
 

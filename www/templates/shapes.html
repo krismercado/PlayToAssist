@@ -1,12 +1,59 @@
 <ion-view view-title="Shapes">
   <ion-content>
     <div class="row">
-      <div class="col">.col</div>
-      <div class="col">.col</div>
+      <div class="col">
+          <a ng-click="decagon()" class="button button-energized">Decagon</a>
+          
+      </div>
+      <div class="col">
+        <div ng-show="decagonisVisible">
+              <img ng-src="img/decagon.jpg"/>
+          </div>  
+      </div>
     </div>
     <div class="row">
-      <div class="col">.col</div>
-      <div class="col">.col</div>
+     <div class="col">
+        <a ng-click="nonagon()" class="button button-positive">Nonagon</a>
+          
+      </div>
+      <div class="col">
+          <div ng-show="nonagonisVisible" class="pull-right">
+              <img ng-src="img/nonagon.jpg"/>
+          </div>  
+      </div>  
+    </div>
+    <div class="row">
+     <div class="col">
+        <a ng-click="octagon()" class="button button-royal">Octagon</a>
+          
+      </div>
+      <div class="col">
+          <div ng-show="octagonisVisible" class="pull-right">
+              <img ng-src="img/octagon.jpg"/>
+          </div>  
+      </div>  
+    </div>
+    <div class="row">
+     <div class="col">
+        <a ng-click="heptagon()" class="button button-assertive">Heptagon</a>
+          
+      </div>
+      <div class="col">
+          <div ng-show="heptagonisVisible" class="pull-right">
+              <img ng-src="img/heptagon.jpg"/>
+          </div>  
+      </div>  
+    </div>
+    <div class="row">
+     <div class="col">
+        <a ng-click="hexagon()" class="button button-energized">Hexagon</a>
+          
+      </div>
+      <div class="col">
+          <div ng-show="hexagonisVisible" class="pull-right">
+              <img ng-src="img/hexagon.jpg"/>
+          </div>  
+      </div>  
     </div>
       
  </ion-content>

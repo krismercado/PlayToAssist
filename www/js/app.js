@@ -95,7 +95,7 @@ angular.module('starter', ['ionic', 'starter.controllers' , 'starter.services'])
     views: {
       'menuContent': {
         templateUrl: 'templates/shapes.html',
-		controller: 'TutorialCtrl'
+		controller: 'ShapesCtrl'
            }
      },
 	 authStatus: true
