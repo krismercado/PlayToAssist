@@ -62,12 +62,12 @@ angular.module('starter.controllers', [])
   //--------------------------------------------
 })
 
-.controller('ItemCtrl', function($scope, $stateParams , Profiles) {
+.controller('TutorialCtrl', function($scope, $stateParams , Profiles) {
 	$scope.profile = Profiles.get($stateParams.profileId);
 })
 
+
 .controller('DashCtrl', function($scope, $stateParams , Profiles) {
-	$scope.profiles = Profiles.all();
     /*
     $scope.showFilterBar = function () {
             filterBarInstance = $ionicFilterBar.show({

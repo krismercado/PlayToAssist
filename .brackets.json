@@ -2,6 +2,7 @@
     "jscodehints.detectedExclusions": [
         "C:/Users/krisel.a.g.mercado/Documents/Capstone/PlayToAssist/www/lib/ionicfilterbar/test/unit/ionic.filter.bar.service.unit.js",
         "C:/Users/krisel.a.g.mercado/Documents/Capstone/PlayToAssist/www/lib/ionic/js/ionic.min.js",
-        "C:/Users/krisel.a.g.mercado/Documents/Capstone/PlayToAssist/www/lib/ionicfilterbar/karma.conf.js"
+        "C:/Users/krisel.a.g.mercado/Documents/Capstone/PlayToAssist/www/lib/ionicfilterbar/karma.conf.js",
+        "C:/Users/krisel.a.g.mercado/Documents/Capstone/PlayToAssist/gulpfile.js"
     ]
 }
