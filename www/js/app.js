@@ -112,6 +112,17 @@ angular.module('starter', ['ionic', 'starter.controllers' , 'starter.services'])
 	 authStatus: true
   })
   
+   .state('app.quiz', {
+    url: '/quiz',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz.html',
+		controller: 'DashCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
   .state('app.tutorials', {
     url: '/tutorials',
     views: {
