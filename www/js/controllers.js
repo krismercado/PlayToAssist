@@ -129,8 +129,8 @@ angular.module('starter.controllers', [])
         $scope.squareisVisible = !$scope.squareisVisible;
     }
     
-    $scope.traingle = function(){
-        $scope.traingleisVisible = !$scope.traingleisVisible;
+    $scope.triangle = function(){
+        $scope.triangleisVisible = !$scope.triangleisVisible;
     }
     
     $scope.oval = function(){
