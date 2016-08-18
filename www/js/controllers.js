@@ -142,6 +142,185 @@ angular.module('starter.controllers', [])
     }
 })
 
+.controller('abcCtrl', function($scope, $stateParams , Profiles) {
+	var initial_state = false;
+   
+    $scope.AisVisible = initial_state;
+    $scope.BisVisible = initial_state;
+    $scope.CisVisible = initial_state;
+    $scope.DisVisible = initial_state;
+    $scope.EisVisible = initial_state;
+    $scope.FisVisible = initial_state;
+    $scope.GisVisible = initial_state;
+    $scope.HisVisible = initial_state;
+    $scope.IisVisible = initial_state;
+    $scope.JisVisible = initial_state;
+    $scope.KisVisible = initial_state;
+    $scope.LisVisible = initial_state;
+    $scope.MisVisible = initial_state;
+    $scope.NisVisible = initial_state;
+    $scope.OisVisible = initial_state;
+    $scope.PisVisible = initial_state;
+    $scope.QisVisible = initial_state;
+    $scope.RisVisible = initial_state;
+    $scope.SisVisible = initial_state;
+    $scope.TisVisible = initial_state;
+    $scope.UisVisible = initial_state;
+    $scope.VisVisible = initial_state;
+    $scope.WisVisible = initial_state;
+    $scope.XisVisible = initial_state;
+    $scope.YisVisible = initial_state;
+    $scope.ZisVisible = initial_state;
+    
+    $scope.A = function(){
+        $scope.AisVisible = !$scope.AisVisible;
+    }
+    
+    $scope.B = function(){
+        $scope.BisVisible = !$scope.BisVisible;
+    }
+    
+    $scope.C = function(){
+        $scope.CisVisible = !$scope.CisVisible;
+    }
+    
+    $scope.D = function(){
+        $scope.DisVisible = !$scope.DisVisible;
+    }
+    
+    $scope.E = function(){
+        $scope.EisVisible = !$scope.EisVisible;
+    }
+    
+    $scope.F = function(){
+        $scope.FisVisible = !$scope.FisVisible;
+    }
+    
+    $scope.G = function(){
+        $scope.GisVisible = !$scope.GisVisible;
+    }
+    
+    $scope.H = function(){
+        $scope.HisVisible = !$scope.HisVisible;
+    }
+    
+    $scope.I = function(){
+        $scope.IisVisible = !$scope.IisVisible;
+    }
+    
+    $scope.J = function(){
+        $scope.JisVisible = !$scope.JisVisible;
+    }
+    
+    $scope.K = function(){
+        $scope.KisVisible = !$scope.KisVisible;
+    }
+    
+    $scope.L = function(){
+        $scope.LisVisible = !$scope.LisVisible;
+    }
+    
+    $scope.M = function(){
+        $scope.MisVisible = !$scope.MisVisible;
+    }
+    
+    $scope.N = function(){
+        $scope.NisVisible = !$scope.NisVisible;
+    }
+    
+    $scope.O = function(){
+        $scope.OisVisible = !$scope.OisVisible;
+    }
+    $scope.P = function(){
+        $scope.PisVisible = !$scope.PisVisible;
+    }
+    $scope.Q = function(){
+        $scope.QisVisible = !$scope.QisVisible;
+    }
+    $scope.R = function(){
+        $scope.RisVisible = !$scope.RisVisible;
+    }
+    $scope.S = function(){
+        $scope.SisVisible = !$scope.SisVisible;
+    }
+    $scope.T = function(){
+        $scope.TisVisible = !$scope.TisVisible;
+    }
+    $scope.U = function(){
+        $scope.UisVisible = !$scope.UisVisible;
+    }
+    $scope.V = function(){
+        $scope.VisVisible = !$scope.VisVisible;
+    }
+    $scope.W = function(){
+        $scope.WisVisible = !$scope.WisVisible;
+    }
+    $scope.X = function(){
+        $scope.XisVisible = !$scope.XisVisible;
+    }
+    $scope.Y = function(){
+        $scope.YisVisible = !$scope.YisVisible;
+    }
+    $scope.Z = function(){
+        $scope.ZisVisible = !$scope.ZisVisible;
+    }
+})
+
+.controller('123Ctrl', function($scope, $stateParams , Profiles) {
+	var initial_state = false;
+   
+    $scope.a1isVisible = initial_state;
+    $scope.a2isVisible = initial_state;
+    $scope.a3isVisible = initial_state;
+    $scope.a4isVisible = initial_state;
+    $scope.a5isVisible = initial_state;
+    $scope.a6isVisible = initial_state;
+    $scope.a7isVisible = initial_state;
+    $scope.a8isVisible = initial_state;
+    $scope.a9isVisible = initial_state;
+    $scope.a10isVisible = initial_state;
+    
+    
+    $scope.a1 = function(){
+        $scope.a1isVisible = !$scope.a1isVisible;
+    }
+    
+    $scope.a2 = function(){
+        $scope.a2isVisible = !$scope.a2isVisible;
+    }
+    
+    $scope.a3 = function(){
+        $scope.a3isVisible = !$scope.a3isVisible;
+    }
+    
+    $scope.a4 = function(){
+        $scope.a4isVisible = !$scope.a4isVisible;
+    }
+    
+    $scope.a5 = function(){
+        $scope.a5isVisible = !$scope.a5isVisible;
+    }
+    
+    $scope.a6 = function(){
+        $scope.a6isVisible = !$scope.a6isVisible;
+    }
+    
+    $scope.a7 = function(){
+        $scope.a7isVisible = !$scope.a7isVisible;
+    }
+    
+    $scope.a8 = function(){
+        $scope.a8isVisible = !$scope.a8isVisible;
+    }
+    
+    $scope.a9 = function(){
+        $scope.a9isVisible = !$scope.a9isVisible;
+    }
+    
+    $scope.a10 = function(){
+        $scope.a10isVisible = !$scope.a10isVisible;
+    }
+})
 
 .controller('DashCtrl', function($scope, $stateParams , Profiles) {
     /*
