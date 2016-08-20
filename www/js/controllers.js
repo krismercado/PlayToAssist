@@ -16,7 +16,13 @@ angular.module('starter.controllers', [])
    $scope.login = function(user) {
 			
 		$http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
-       $http({
+       
+       if(typeof(user)=='undefined'){
+			$scope.showAlert('Please fill username and password to proceed.');	
+			return false;
+		}
+       else{
+           $http({
           method: 'POST',
           url: 'http://assistwebportal.com/main/applogin',
            transformRequest: function(obj) {
@@ -41,15 +47,14 @@ angular.module('starter.controllers', [])
             // or server returns response with an error status.
            console.log('error');
        });
+       }
+       
 
-		if(typeof(user)=='undefined'){
-			$scope.showAlert('Please fill username and password to proceed.');	
-			return false;
-		}
+		
 	};
 
   //--------------------------------------------
-  $scope.logout = function() {    $window.location.reload('/app/login');   };
+  $scope.logout = function() {    $location.path('/app/login');   };
 
   //--------------------------------------------
    // An alert dialog
