@@ -62,7 +62,7 @@ angular.module('starter.controllers', [])
   //--------------------------------------------
 })
 
-.controller('ShapesCtrl', function($scope, $stateParams , Profiles) {
+.controller('ShapesCtrl', function($scope, $stateParams , Profiles, $ionicModal) {
 	var initial_state = false;
    
     $scope.decagonisVisible = initial_state;
@@ -73,9 +73,7 @@ angular.module('starter.controllers', [])
     $scope.pentagonisVisible = initial_state;
     $scope.rectangleisVisible = initial_state;
     $scope.parallelogramisVisible = initial_state;
-    $scope.rhombusisVisible = initial_state;
     $scope.diamondisVisible = initial_state;
-    $scope.trapeziumisVisible = initial_state;
     $scope.squareisVisible = initial_state;
     $scope.traingleisVisible = initial_state;
     $scope.ovalisVisible = initial_state;
@@ -113,16 +111,8 @@ angular.module('starter.controllers', [])
         $scope.parallelogramisVisible = !$scope.parallelogramisVisible;
     }
     
-    $scope.rhombus = function(){
-        $scope.rhombusisVisible = !$scope.rhombusisVisible;
-    }
-    
     $scope.diamond = function(){
         $scope.diamondisVisible = !$scope.diamondisVisible;
-    }
-    
-    $scope.trapezium = function(){
-        $scope.trapeziumisVisible = !$scope.trapeziumisVisible;
     }
     
     $scope.square = function(){
@@ -140,6 +130,180 @@ angular.module('starter.controllers', [])
     $scope.circle = function(){
         $scope.circleisVisible = !$scope.circleisVisible;
     }
+    
+    $ionicModal.fromTemplateUrl('templates/modal.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.modal = modal;
+  });
+  $scope.openModal = function() {
+    $scope.modal.show();
+  };
+  $scope.closeModal = function() {
+    $scope.modal.hide();
+  };
+    
+    $ionicModal.fromTemplateUrl('templates/modals/nonagon.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.nonagon = modal;
+  });
+  $scope.openModal = function() {
+    $scope.nonagon.show();
+  };
+  $scope.closeModal = function() {
+    $scope.nonagon.hide();
+  };
+    
+    $ionicModal.fromTemplateUrl('templates/modals/octagon.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.octagon = modal;
+  });
+  $scope.openModal = function() {
+    $scope.octagon.show();
+  };
+  $scope.closeModal = function() {
+    $scope.octagon.hide();
+  };
+    
+        $ionicModal.fromTemplateUrl('templates/modals/heptagon.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.heptagon = modal;
+  });
+  $scope.openModal = function() {
+    $scope.heptagon.show();
+  };
+  $scope.closeModal = function() {
+    $scope.heptagon.hide();
+  };
+    
+    $ionicModal.fromTemplateUrl('templates/modals/rectangle.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.rectangle = modal;
+  });
+  $scope.openModal = function() {
+    $scope.rectangle.show();
+  };
+  $scope.closeModal = function() {
+    $scope.rectangle.hide();
+  };
+    
+    
+    $ionicModal.fromTemplateUrl('templates/modals/pentagon.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.pentagon = modal;
+  });
+  $scope.openModal = function() {
+    $scope.pentagon.show();
+  };
+  $scope.closeModal = function() {
+    $scope.pentagon.hide();
+  };
+    
+    
+    $ionicModal.fromTemplateUrl('templates/modals/hexagon.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.hexagon = modal;
+  });
+  $scope.openModal = function() {
+    $scope.hexagon.show();
+  };
+  $scope.closeModal = function() {
+    $scope.hexagon.hide();
+  };
+    
+    
+    $ionicModal.fromTemplateUrl('templates/modals/parallelogram.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.parallelogram = modal;
+  });
+  $scope.openModal = function() {
+    $scope.parallelogram.show();
+  };
+  $scope.closeModal = function() {
+    $scope.parallelogram.hide();
+  };
+    
+    $ionicModal.fromTemplateUrl('templates/modals/circle.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.circle = modal;
+  });
+  $scope.openModal = function() {
+    $scope.ciircle.show();
+  };
+  $scope.closeModal = function() {
+    $scope.circle.hide();
+  };
+    
+    
+    $ionicModal.fromTemplateUrl('templates/modals/diamond.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.diamond = modal;
+  });
+  $scope.openModal = function() {
+    $scope.diamond.show();
+  };
+  $scope.closeModal = function() {
+    $scope.diamond.hide();
+  };
+    
+    
+    $ionicModal.fromTemplateUrl('templates/modals/oval.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.oval = modal;
+  });
+  $scope.openModal = function() {
+    $scope.oval.show();
+  };
+  $scope.closeModal = function() {
+    $scope.oval.hide();
+  };
+    
+    $ionicModal.fromTemplateUrl('templates/modals/square.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.square = modal;
+  });
+  $scope.openModal = function() {
+    $scope.square.show();
+  };
+  $scope.closeModal = function() {
+    $scope.square.hide();
+  };
+    
+        $ionicModal.fromTemplateUrl('templates/modals/triangle.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.triangle = modal;
+  });
+  $scope.openModal = function() {
+    $scope.triangle.show();
+  };
+  $scope.closeModal = function() {
+    $scope.triangle.hide();
+  };
 })
 
 .controller('abcCtrl', function($scope, $stateParams , Profiles) {
@@ -266,7 +430,7 @@ angular.module('starter.controllers', [])
     }
 })
 
-.controller('123Ctrl', function($scope, $stateParams , Profiles) {
+.controller('123Ctrl', function($scope, $stateParams , Profiles, $ionicModal) {
 	var initial_state = false;
    
     $scope.a1isVisible = initial_state;
@@ -320,6 +484,136 @@ angular.module('starter.controllers', [])
     $scope.a10 = function(){
         $scope.a10isVisible = !$scope.a10isVisible;
     }
+    
+    $ionicModal.fromTemplateUrl('templates/modals/number1.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.number1 = modal;
+  });
+  $scope.openModal = function() {
+    $scope.number1.show();
+  };
+  $scope.closeModal = function() {
+    $scope.number1.hide();
+  };
+    
+    $ionicModal.fromTemplateUrl('templates/modals/number2.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.number2 = modal;
+  });
+  $scope.openModal = function() {
+    $scope.number2.show();
+  };
+  $scope.closeModal = function() {
+    $scope.number2.hide();
+  };
+    
+    $ionicModal.fromTemplateUrl('templates/modals/number3.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.number3 = modal;
+  });
+  $scope.openModal = function() {
+    $scope.number3.show();
+  };
+  $scope.closeModal = function() {
+    $scope.number3.hide();
+  };
+    
+    $ionicModal.fromTemplateUrl('templates/modals/number4.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.number4 = modal;
+  });
+  $scope.openModal = function() {
+    $scope.number4.show();
+  };
+  $scope.closeModal = function() {
+    $scope.number4.hide();
+  };
+    
+    $ionicModal.fromTemplateUrl('templates/modals/number5.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.number5 = modal;
+  });
+  $scope.openModal = function() {
+    $scope.number5.show();
+  };
+  $scope.closeModal = function() {
+    $scope.number5.hide();
+  };
+    
+    $ionicModal.fromTemplateUrl('templates/modals/number6.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.number6 = modal;
+  });
+  $scope.openModal = function() {
+    $scope.number6.show();
+  };
+  $scope.closeModal = function() {
+    $scope.number6.hide();
+  };
+    
+    $ionicModal.fromTemplateUrl('templates/modals/number7.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.number7 = modal;
+  });
+  $scope.openModal = function() {
+    $scope.number7.show();
+  };
+  $scope.closeModal = function() {
+    $scope.number7.hide();
+  };
+    
+    $ionicModal.fromTemplateUrl('templates/modals/number8.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.number8 = modal;
+  });
+  $scope.openModal = function() {
+    $scope.number8.show();
+  };
+  $scope.closeModal = function() {
+    $scope.number8.hide();
+  };
+    
+    $ionicModal.fromTemplateUrl('templates/modals/number9.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.number9 = modal;
+  });
+  $scope.openModal = function() {
+    $scope.number9.show();
+  };
+  $scope.closeModal = function() {
+    $scope.number9.hide();
+  };
+    
+    $ionicModal.fromTemplateUrl('templates/modals/number10.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.number10 = modal;
+  });
+  $scope.openModal = function() {
+    $scope.number10.show();
+  };
+  $scope.closeModal = function() {
+    $scope.number10.hide();
+  };
 })
 
 .controller('DashCtrl', function($scope, $stateParams , Profiles) {
@@ -336,5 +630,6 @@ angular.module('starter.controllers', [])
             });
         };
     **/
+    
 });
 

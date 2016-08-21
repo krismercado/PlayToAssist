@@ -2,57 +2,36 @@
   <ion-content>
     <div class="row">
       <div class="col">
-          <a ng-click="decagon()" class="button button-energized">Decagon</a>
+          <button ng-click="modal.show()" class="button button-energized">Decagon</button>
           
-      </div>
-      <div class="col">
-        <div ng-show="decagonisVisible">
-              <img ng-src="img/decagon.jpg"/>
-          </div>  
       </div>
     </div>
+      
     <div class="row">
      <div class="col">
-        <a ng-click="nonagon()" class="button button-positive">Nonagon</a>
+         <button ng-click="nonagon.show()" class="button button-positive">Nonagon</button>
           
-      </div>
-      <div class="col">
-          <div ng-show="nonagonisVisible" class="pull-right">
-              <img ng-src="img/nonagon.jpg"/>
-          </div>  
       </div>  
     </div>
+      
     <div class="row">
      <div class="col">
-        <a ng-click="octagon()" class="button button-royal">Octagon</a>
-          
-      </div>
-      <div class="col">
-          <div ng-show="octagonisVisible" class="pull-right">
-              <img ng-src="img/octagon.jpg"/>
-          </div>  
-      </div>  
+        <button ng-click="octagon.show()" class="button button-royal">Octagon</button>
     </div>
-    <div class="row">
-     <div class="col">
-        <a ng-click="heptagon()" class="button button-assertive">Heptagon</a>
-          
-      </div>
-      <div class="col">
-          <div ng-show="heptagonisVisible" class="pull-right">
-              <img ng-src="img/heptagon.jpg"/>
-          </div>  
-      </div>  
     </div>
+      
+      
     <div class="row">
      <div class="col">
-        <a ng-click="hexagon()" class="button button-energized">Hexagon</a>
-          
-      </div>
-      <div class="col">
-          <div ng-show="hexagonisVisible" class="pull-right">
-              <img ng-src="img/hexagon.jpg"/>
-          </div>  
+        <button ng-click="heptagon.show()" class="button button-assertive">Heptagon</button>  
+    </div>
+    </div>
+      
+      
+      
+    <div class="row">
+     <div class="col">
+        <buttton ng-click="hexagon.show()" class="button button-energized">Hexagon</button> 
       </div>  
     </div>
       
@@ -61,116 +40,56 @@
       
     <div class="row">
       <div class="col">
-          <a ng-click="pentagon()" class="button button-dark">Pentagon</a>
-          
-      </div>
-      <div class="col">
-        <div ng-show="pentagonisVisible">
-              <img ng-src="img/pentagon.jpg"/>
-          </div>  
+          <button ng-click="pentagon.show()" class="button button-dark">Pentagon</button>
       </div>
     </div>
+      
+      
     <div class="row">
      <div class="col">
-        <a ng-click="rectangle()" class="button button-positive">Rectangle</a>
-          
-      </div>
-      <div class="col">
-          <div ng-show="rectangleisVisible" class="pull-right">
-              <img ng-src="img/rectangle.jpg"/>
-          </div>  
-      </div>  
-    </div>
-    <div class="row">
-     <div class="col">
-        <a ng-click="parallelogram()" class="button button-royal">Parallelogram</a>
-          
-      </div>
-      <div class="col">
-          <div ng-show="parallelogramisVisible" class="pull-right">
-              <img ng-src="img/parallelogram.jpg"/>
-          </div>  
-      </div>  
-    </div>
-    <div class="row">
-     <div class="col">
-        <a ng-click="rhombus()" class="button button-assertive">Rhombus</a>
-          
-      </div>
-      <div class="col">
-          <div ng-show="rhombusisVisible" class="pull-right">
-              <img ng-src="img/rhombus.jpg"/>
-          </div>  
-      </div>  
-    </div>
-    <div class="row">
-     <div class="col">
-        <a ng-click="diamond()" class="button button-energized">Diamond</a>
-          
-      </div>
-      <div class="col">
-          <div ng-show="diamondisVisible" class="pull-right">
-              <img ng-src="img/diamond.jpg"/>
-          </div>  
+        <button ng-click="rectangle.show()" class="button button-positive">Rectangle</button>
       </div>  
     </div>
       
       
+    <div class="row">
+     <div class="col">
+        <button ng-click="parallelogram.show()" class="button button-royal">Parallelogram</button>
+      </div>  
+    </div>
       
       
-      <div class="row">
-      <div class="col">
-          <a ng-click="trapezium()" class="button button-dark">Trapezium</a>
-          
-      </div>
-      <div class="col">
-        <div ng-show="trapeziumisVisible">
-              <img ng-src="img/trapezium.jpg"/>
-          </div>  
-      </div>
-    </div>
     <div class="row">
      <div class="col">
-        <a ng-click="square()" class="button button-positive">Square</a>
-          
+        <button ng-click="diamond.show()" class="button button-energized">Diamond</button> 
+      </div>  
       </div>
-      <div class="col">
-          <div ng-show="squareisVisible" class="pull-right">
-              <img ng-src="img/square.jpg"/>
-          </div>  
+      
+      
+    <div class="row">
+     <div class="col">
+        <button ng-click="square.show()" class="button button-positive">Square</button>
       </div>  
     </div>
+      
+      
     <div class="row">
      <div class="col">
-        <a ng-click="triangle()" class="button button-royal">Triangle</a>
-          
-      </div>
-      <div class="col">
-          <div ng-show="triangleisVisible" class="pull-right">
-              <img ng-src="img/triangle.jpg"/>
-          </div>  
+        <button ng-click="triangle.show()" class="button button-royal">Triangle</button>
       </div>  
     </div>
+      
+      
     <div class="row">
      <div class="col">
-        <a ng-click="oval()" class="button button-assertive">Oval</a>
-          
-      </div>
-      <div class="col">
-          <div ng-show="ovalisVisible" class="pull-right">
-              <img ng-src="img/oval.jpg"/>
-          </div>  
+        <button ng-click="oval.show()" class="button button-assertive">Oval</button>  
       </div>  
     </div>
+      
+      
     <div class="row">
      <div class="col">
-        <a ng-click="circle()" class="button button-energized">Circle</a>
-          
-      </div>
-      <div class="col">
-          <div ng-show="circleisVisible" class="pull-right">
-              <img ng-src="img/circle.jpg"/>
-          </div>  
+        <button ng-click="circle.show()" class="button button-energized">Circle</button>
       </div>  
     </div>
       
