@@ -621,6 +621,35 @@ angular.module('starter.controllers', [])
   };
 })
 
+.controller('QuizCtrl', function($scope, $stateParams , $ionicModal) {
+    $ionicModal.fromTemplateUrl('templates/modals/correct.html', {
+        scope: $scope,
+        animation: 'slide-in-up'
+      }).then(function(modal) {
+        $scope.correct = modal;
+      });
+      $scope.openModal = function() {
+        $scope.correct.show();
+      };
+      $scope.closeModal = function() {
+        $scope.correct.hide();
+      };
+    
+    $ionicModal.fromTemplateUrl('templates/modals/wrong.html', {
+        scope: $scope,
+        animation: 'slide-in-up'
+      }).then(function(modal) {
+        $scope.wrong = modal;
+      });
+      $scope.openModal = function() {
+        $scope.wrong.show();
+      };
+      $scope.closeModal = function() {
+        $scope.wrong.hide();
+      };
+    
+})
+
 .controller('DashCtrl', function($scope, $stateParams , Profiles) {
     /*
     $scope.showFilterBar = function () {
