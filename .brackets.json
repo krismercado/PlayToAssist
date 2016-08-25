@@ -49,6 +49,12 @@
         "G:/PlayToAssist/www/lib/ionicfilterbar/js/ionic.filter.bar.js",
         "G:/PlayToAssist/www/lib/ionicfilterbar/js/ionic.filter.bar.directive.js",
         "G:/PlayToAssist/www/lib/ionicfilterbar/js/ionic.filter.bar.config.js",
-        "G:/PlayToAssist/www/lib/ionicfilterbar/dist/ionic.filter.bar.min.js"
+        "G:/PlayToAssist/www/lib/ionicfilterbar/dist/ionic.filter.bar.min.js",
+        "G:/PlayToAssist/platforms/android/build/intermediates/assets/debug/www/lib/ionic/js/angular/angular-sanitize.js",
+        "G:/PlayToAssist/platforms/android/build/intermediates/assets/debug/www/lib/ionic/js/angular/angular-sanitize.min.js",
+        "G:/PlayToAssist/platforms/android/build/intermediates/assets/debug/www/lib/ionic/js/angular/angular.js",
+        "G:/PlayToAssist/platforms/android/build/intermediates/assets/debug/www/lib/ionic/js/angular/angular.min.js",
+        "G:/PlayToAssist/platforms/android/build/intermediates/assets/debug/www/lib/ionic/js/angular-ui/angular-ui-router.js",
+        "G:/PlayToAssist/platforms/android/build/intermediates/assets/debug/www/lib/ionic/js/angular-ui/angular-ui-router.min.js"
     ]
 }
