@@ -145,7 +145,7 @@ angular.module('starter.controllers', [])
   $scope.openModal = function() {
     $scope.modal.show();
   };
-  $scope.closeModal = function() {
+  $scope.closeModal1 = function() {
     $scope.modal.hide();
   };
     
@@ -158,7 +158,7 @@ angular.module('starter.controllers', [])
   $scope.openModal = function() {
     $scope.nonagon.show();
   };
-  $scope.closeModal = function() {
+  $scope.closeModal2 = function() {
     $scope.nonagon.hide();
   };
     
@@ -171,7 +171,7 @@ angular.module('starter.controllers', [])
   $scope.openModal = function() {
     $scope.octagon.show();
   };
-  $scope.closeModal = function() {
+  $scope.closeModal3 = function() {
     $scope.octagon.hide();
   };
     
@@ -184,7 +184,7 @@ angular.module('starter.controllers', [])
   $scope.openModal = function() {
     $scope.heptagon.show();
   };
-  $scope.closeModal = function() {
+  $scope.closeModal4 = function() {
     $scope.heptagon.hide();
   };
     
@@ -197,7 +197,7 @@ angular.module('starter.controllers', [])
   $scope.openModal = function() {
     $scope.rectangle.show();
   };
-  $scope.closeModal = function() {
+  $scope.closeModal5 = function() {
     $scope.rectangle.hide();
   };
     
@@ -211,7 +211,7 @@ angular.module('starter.controllers', [])
   $scope.openModal = function() {
     $scope.pentagon.show();
   };
-  $scope.closeModal = function() {
+  $scope.closeModal6 = function() {
     $scope.pentagon.hide();
   };
     
@@ -225,7 +225,7 @@ angular.module('starter.controllers', [])
   $scope.openModal = function() {
     $scope.hexagon.show();
   };
-  $scope.closeModal = function() {
+  $scope.closeModal7 = function() {
     $scope.hexagon.hide();
   };
     
@@ -239,7 +239,7 @@ angular.module('starter.controllers', [])
   $scope.openModal = function() {
     $scope.parallelogram.show();
   };
-  $scope.closeModal = function() {
+  $scope.closeModal8 = function() {
     $scope.parallelogram.hide();
   };
     
@@ -252,7 +252,7 @@ angular.module('starter.controllers', [])
   $scope.openModal = function() {
     $scope.ciircle.show();
   };
-  $scope.closeModal = function() {
+  $scope.closeModal9 = function() {
     $scope.circle.hide();
   };
     
@@ -266,7 +266,7 @@ angular.module('starter.controllers', [])
   $scope.openModal = function() {
     $scope.diamond.show();
   };
-  $scope.closeModal = function() {
+  $scope.closeModal10 = function() {
     $scope.diamond.hide();
   };
     
@@ -280,7 +280,7 @@ angular.module('starter.controllers', [])
   $scope.openModal = function() {
     $scope.oval.show();
   };
-  $scope.closeModal = function() {
+  $scope.closeModal11 = function() {
     $scope.oval.hide();
   };
     
@@ -293,7 +293,7 @@ angular.module('starter.controllers', [])
   $scope.openModal = function() {
     $scope.square.show();
   };
-  $scope.closeModal = function() {
+  $scope.closeModal12 = function() {
     $scope.square.hide();
   };
     
@@ -306,7 +306,7 @@ angular.module('starter.controllers', [])
   $scope.openModal = function() {
     $scope.triangle.show();
   };
-  $scope.closeModal = function() {
+  $scope.closeModal13 = function() {
     $scope.triangle.hide();
   };
     
@@ -983,6 +983,35 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
   $scope.closeModal = function() {
     $scope.number10.hide();
   };
+})
+
+.controller('QuizCtrl', function($scope, $stateParams , $ionicModal) {
+    $ionicModal.fromTemplateUrl('templates/modals/correct.html', {
+        scope: $scope,
+        animation: 'slide-in-up'
+      }).then(function(modal) {
+        $scope.correct = modal;
+      });
+      $scope.openModal = function() {
+        $scope.correct.show();
+      };
+      $scope.closeModal = function() {
+        $scope.correct.hide();
+      };
+    
+    $ionicModal.fromTemplateUrl('templates/modals/wrong.html', {
+        scope: $scope,
+        animation: 'slide-in-up'
+      }).then(function(modal) {
+        $scope.wrong = modal;
+      });
+      $scope.openModal = function() {
+        $scope.wrong.show();
+      };
+      $scope.closeModal = function() {
+        $scope.wrong.hide();
+      };
+    
 })
 
 .controller('DashCtrl', function($scope, $stateParams , Profiles) {
