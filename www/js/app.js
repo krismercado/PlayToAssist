@@ -144,6 +144,7 @@ angular.module('starter', ['ionic', 'starter.controllers' , 'starter.services'])
      },
 	 authStatus: true
   })
+  
   .state('app.123', {
     url: '/123',
     views: {
@@ -160,6 +161,17 @@ angular.module('starter', ['ionic', 'starter.controllers' , 'starter.services'])
     views: {
       'menuContent': {
         templateUrl: 'templates/quiz/shapes1.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.shapesquiz2', {
+    url: '/shapesquiz2',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/shapes2.html',
 		controller: 'QuizCtrl'
       }
      },
@@ -183,6 +195,39 @@ angular.module('starter', ['ionic', 'starter.controllers' , 'starter.services'])
       'menuContent': {
         templateUrl: 'templates/tutorial.html',
 		controller: 'DashCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.color', {
+    url: '/color',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/color.html',
+		controller: 'colorCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.senses', {
+    url: '/senses',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/senses.html',
+		controller: 'sensesCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.taste', {
+    url: '/taste',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/taste.html',
+		controller: 'tasteCtrl'
       }
      },
 	 authStatus: true
