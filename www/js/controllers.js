@@ -1184,19 +1184,27 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
   };
   })  
   
-.controller('QuizCtrl', function($scope, $stateParams , $ionicModal) {
+.controller('QuizCtrl', function($scope, $rootScope, $stateParams , $ionicModal,  $location) {
     $ionicModal.fromTemplateUrl('templates/modals/correct.html', {
         scope: $scope,
         animation: 'slide-in-up'
       }).then(function(modal) {
         $scope.correct = modal;
       });
-      $scope.openModal = function() {
+      $scope.openCorrectModal = function(data) {
         $scope.correct.show();
+          console.log(data);
+       $rootScope.quizloc = data;
+          
       };
       $scope.closeModal = function() {
         $scope.correct.hide();
       };
+    
+    $scope.nextquestion = function(){
+         $scope.correct.hide();
+        $location.path($rootScope.quizloc);
+    }
     
     $ionicModal.fromTemplateUrl('templates/modals/wrong.html', {
         scope: $scope,
@@ -1204,7 +1212,7 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
       }).then(function(modal) {
         $scope.wrong = modal;
       });
-      $scope.openModal = function() {
+      $scope.openWrongModal = function() {
         $scope.wrong.show();
       };
       $scope.closeModal = function() {

@@ -1,12 +1,11 @@
 <ion-modal-view view-title="Correct">
     <ion-header-bar>
       <h1 class="title">Congratulations!</h1>
-      <div class="button button-clear" ng-click="correct.hide()"><span class="icon ion-close"></span></div>
     </ion-header-bar>
     <ion-content>
         <center>
              <h1 class="title">Your Answer is CORRECT!</h1><img ng-src="img/smiley.png"/>
-            <h1><a class="button button-primary" href="#/app/shapesquiz2" ng-click="correct.hide()"><font color="black">NEXT QUESTION</font></a></h1>
+            <h1><a class="button button-primary" id="correct" href="" ng-click="nextquestion()"><font color="black">NEXT QUESTION</font></a></h1>
         </center>
     </ion-content>
   </ion-modal-view>
