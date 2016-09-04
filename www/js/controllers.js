@@ -608,6 +608,87 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
   $scope.closeModal = function() {
     $scope.Z.hide();
   };
+    
+    
+   $scope.Aaudio = function() {
+    document.getElementById('A').play();
+  };
+     $scope.Baudio = function() {
+    document.getElementById('B').play();
+  };
+     $scope.Caudio = function() {
+    document.getElementById('C').play();
+  };
+    $scope.Daudio = function() {
+    document.getElementById('D').play();
+  };
+    $scope.Eaudio = function() {
+    document.getElementById('E').play();
+  };
+    $scope.Faudio = function() {
+    document.getElementById('F').play();
+  };
+    $scope.Gaudio = function() {
+    document.getElementById('G').play();
+  };
+    $scope.Haudio = function() {
+    document.getElementById('H').play();
+  };
+    $scope.Iaudio = function() {
+    document.getElementById('I').play();
+  };
+    $scope.Jaudio = function() {
+    document.getElementById('J').play();
+  };
+    $scope.Kaudio = function() {
+    document.getElementById('K').play();
+  };
+    $scope.Laudio = function() {
+    document.getElementById('L').play();
+  };
+    $scope.Maudio = function() {
+    document.getElementById('M').play();
+  };
+    $scope.Naudio = function() {
+    document.getElementById('N').play();
+  };
+    $scope.Oaudio = function() {
+    document.getElementById('O').play();
+  };
+    $scope.Paudio = function() {
+    document.getElementById('P').play();
+  };
+    $scope.Qaudio = function() {
+    document.getElementById('Q').play();
+  };
+    $scope.Raudio = function() {
+    document.getElementById('R').play();
+  };
+    $scope.Saudio = function() {
+    document.getElementById('S').play();
+  };
+    $scope.Taudio = function() {
+    document.getElementById('T').play();
+  };
+    $scope.Uaudio = function() {
+    document.getElementById('U').play();
+  };
+    $scope.Vaudio = function() {
+    document.getElementById('V').play();
+  };
+    $scope.Waudio = function() {
+    document.getElementById('W').play();
+  };
+    $scope.Xaudio = function() {
+    document.getElementById('X').play();
+  };
+    $scope.Yaudio = function() {
+    document.getElementById('Y').play();
+  };
+    $scope.Zaudio = function() {
+    document.getElementById('Z').play();
+  };
+    
 })
 
 .controller('123Ctrl', function($scope, $stateParams , Profiles, $ionicModal) {
