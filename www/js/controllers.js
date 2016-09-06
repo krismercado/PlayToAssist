@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('AppCtrl', function($scope, $ionicModal, $ionicPopover, $timeout,  $location, $ionicPopup, $http) {
+.controller('AppCtrl', function($scope, $ionicModal, $ionicPopover, $timeout,  $location, $ionicPopup, $http, $rootScope) {
 
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
@@ -38,6 +38,7 @@ angular.module('starter.controllers', [])
            console.log(user.validate);
           
            if(user.validate != 'false'){
+             $rootScope.user = user.username;
 			$location.path('/app/dashboard');
             }else{
                 $scope.showAlert('Invalid username or password.');	
@@ -1184,7 +1185,30 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
   };
   })  
   
-.controller('QuizCtrl', function($scope, $rootScope, $stateParams , $ionicModal,  $location) {
+.controller('QuizCtrl', function($http, $scope, $rootScope, $stateParams , $ionicModal,  $location) {
+    
+      $scope.name = $rootScope.user;
+     $scope.endquiz = function(score) {
+        $http({
+          method: 'POST',
+          url: 'http://assistwebportal.com/',
+           transformRequest: function(obj) {
+            var str = [];
+            for(var p in obj)
+            str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+            return str.join("&");
+           },
+          data: { username: $scope.name,space_type:item.space_type,location:item.location,price:item.price,comments:item.comments }
+        }).then(function successCallback(response) {
+            $scope.showAlert('Information Posted!');	
+          }, function errorCallback(response) {
+            // called asynchronously if an error occurs
+            // or server returns response with an error status.
+           console.log('error');
+       });
+
+	};
+    
     $ionicModal.fromTemplateUrl('templates/modals/correct.html', {
         scope: $scope,
         animation: 'slide-in-up'

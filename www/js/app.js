@@ -160,7 +160,7 @@ angular.module('starter', ['ionic', 'starter.controllers' , 'starter.services'])
     url: '/shapesquiz1',
     views: {
       'menuContent': {
-        templateUrl: 'templates/quiz/shapes1.html',
+        templateUrl: 'templates/quiz/shapes/shapes1.html',
 		controller: 'QuizCtrl'
       }
      },
@@ -171,7 +171,7 @@ angular.module('starter', ['ionic', 'starter.controllers' , 'starter.services'])
     url: '/shapesquiz2',
     views: {
       'menuContent': {
-        templateUrl: 'templates/quiz/shapes2.html',
+        templateUrl: 'templates/quiz/shapes/shapes2.html',
 		controller: 'QuizCtrl'
       }
      },
@@ -182,7 +182,40 @@ angular.module('starter', ['ionic', 'starter.controllers' , 'starter.services'])
     url: '/shapesquiz3',
     views: {
       'menuContent': {
-        templateUrl: 'templates/quiz/shapes3.html',
+        templateUrl: 'templates/quiz/shapes/shapes3.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.shapesquiz4', {
+    url: '/shapesquiz4',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/shapes/shapes4.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.shapesquiz5', {
+    url: '/shapesquiz5',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/shapes/shapes5.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.shapesquiz6', {
+    url: '/shapesquiz6',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/shapes/shapes6.html',
 		controller: 'QuizCtrl'
       }
      },
