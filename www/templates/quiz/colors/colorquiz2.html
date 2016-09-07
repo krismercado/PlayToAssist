@@ -1,0 +1,29 @@
+<ion-view view-title="Colors Quiz">
+  <ion-content>
+
+      <div class="card">
+          <div class="item item-text-wrap">
+            <center><h1>What color is this?</h1><br>
+              <img ng-src="img/blue.png"/>
+                </center>
+              <br><br>
+              <center>
+                <div class="row">
+              <div class="col">
+                <a class="button button-clear" ng-click="openWrongModal()" class="button button-royal"><font color="black"><strong>A) Pink</strong></font></a>
+              </div>  
+
+              <div class="col">
+                <a class="button button-clear" ng-click="openCorrectModal('/app/colorquiz3')" class="button button-royal"><font color="black"><strong>B) Blue</strong></font></a>
+              </div>  
+            </div>
+              </center>
+          </div>
+      </div>
+      <button class="button button-block button-assertive" ng-click="#">
+      End Quiz
+      </button>
+      
+      
+ </ion-content>
+</ion-view>

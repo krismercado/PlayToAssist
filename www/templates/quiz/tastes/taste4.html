@@ -1,0 +1,29 @@
+<ion-view view-title="Basic Taste Quiz">
+  <ion-content>
+
+      <div class="card">
+          <div class="item item-text-wrap">
+            <center><h1>What does Ampalaya taste like?</h1><br>
+                <img ng-src="img/ampalaya.jpg"/>
+                </center>
+              <br><br>
+              <center>
+                <div class="row">
+              <div class="col">
+                <a class="button button-clear" ng-click="openCorrectModal('/app/tastesquiz5')" class="button button-royal"><font color="black"><strong>A) Bitter</strong></font></a>
+              </div>  
+
+              <div class="col">
+                <a class="button button-clear" ng-click="openWrongModal()" class="button button-royal"><font color="black"><strong>B) Salty</strong></font></a>
+              </div>  
+            </div>
+              </center>
+          </div>
+      </div>
+      <button class="button button-block button-assertive" ng-click="#">
+      End Quiz
+      </button>
+      
+      
+ </ion-content>
+</ion-view>

@@ -1,0 +1,31 @@
+<ion-view view-title="Shapes Quiz">
+  <ion-content>
+
+      <div class="card">
+          <div class="item item-text-wrap">
+            <center><h1>What shape is this?</h1><br>
+              <img ng-src="img/oval.jpg"/><img ng-src="img/diamond.jpg"/>
+                <h4><strong><u>Its a rounded and slightly elongated shape like an egg.</u></strong></h4><h4><strong><u>And</u></strong></h4><h4><strong><u>It has a 4 equal sides forming two opposite acute angle</u></strong></h4>
+                </center>
+              <br><br>
+              <center>
+                <div class="row">
+               
+
+              <div class="col">
+                <a class="button button-clear" ng-click="openWrongModal()"><font color="black"><strong>A) Rectangle and Square</strong></font></a>
+              </div>
+                    
+                    <div class="col">
+                <a class="button button-clear" ng-click="openCorrectModal('/app/shapesquiz10')"><font color="black"><strong>B) Oval and Diamond</strong></font></a>
+              </div> 
+            </div>
+              </center>
+          </div>
+      </div>
+      
+         <button class="button button-block button-assertive" ng-click="endquiz(100,'Shapes Quiz')">
+      End Quiz
+      </button>
+ </ion-content>
+</ion-view>

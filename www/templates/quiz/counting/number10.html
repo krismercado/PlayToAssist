@@ -1,0 +1,29 @@
+<ion-view view-title="Numbers Quiz">
+  <ion-content>
+
+      <div class="card">
+          <div class="item item-text-wrap">
+            <center><h1>How many Cars are there?</h1><br>
+              <img ng-src="img/10quiz.jpg"/>
+                </center>
+              <br><br>
+              <center>
+                <div class="row">
+              <div class="col">
+                <a class="button button-clear" ng-click="openWrongModal()" class="button button-royal"><font color="black"><strong>A) Five</strong></font></a>
+              </div>  
+
+              <div class="col">
+                <a class="button button-clear" ng-click="openCorrectModal('/app/numberquiz10')" class="button button-royal"><font color="black"><strong>B) Ten</strong></font></a>
+              </div>  
+            </div>
+              </center>
+          </div>
+      </div>
+      <button class="button button-block button-assertive" ng-click="#">
+      End Quiz
+      </button>
+      
+      
+ </ion-content>
+</ion-view>

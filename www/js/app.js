@@ -222,6 +222,347 @@ angular.module('starter', ['ionic', 'starter.controllers' , 'starter.services'])
 	 authStatus: true
   })
   
+  .state('app.shapesquiz7', {
+    url: '/shapesquiz7',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/shapes/shapes7.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.shapesquiz8', {
+    url: '/shapesquiz8',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/shapes/shapes8.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.shapesquiz9', {
+    url: '/shapesquiz9',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/shapes/shapes9.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.shapesquiz10', {
+    url: '/shapesquiz10',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/shapes/shapes10.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.numberquiz1', {
+    url: '/numberquiz1',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/counting/number1.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.numberquiz2', {
+    url: '/numberquiz2',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/counting/number2.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.numberquiz3', {
+    url: '/numberquiz3',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/counting/number3.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.numberquiz4', {
+    url: '/numberquiz4',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/counting/number4.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.numberquiz5', {
+    url: '/numberquiz5',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/counting/number5.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.numberquiz6', {
+    url: '/numberquiz6',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/counting/number6.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.numberquiz7', {
+    url: '/numberquiz7',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/counting/number7.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.numberquiz8', {
+    url: '/numberquiz8',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/counting/number8.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.numberquiz9', {
+    url: '/numberquiz9',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/counting/number9.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.numberquiz10', {
+    url: '/numberquiz10',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/counting/number10.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.colorquiz1', {
+    url: '/colorquiz1',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/colors/colorquiz1.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.colorquiz2', {
+    url: '/colorquiz2',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/colors/colorquiz2.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.colorquiz3', {
+    url: '/colorquiz3',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/colors/colorquiz3.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.colorquiz4', {
+    url: '/colorquiz4',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/colors/colorquiz4.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.colorquiz5', {
+    url: '/colorquiz5',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/colors/colorquiz5.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.colorquiz6', {
+    url: '/colorquiz6',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/colors/colorquiz6.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.colorquiz7', {
+    url: '/colorquiz7',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/colors/colorquiz7.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.sensesquiz1', {
+    url: '/sensesquiz1',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/senses/senses1.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.sensesquiz2', {
+    url: '/sensesquiz2',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/senses/senses2.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.sensesquiz3', {
+    url: '/sensesquiz3',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/senses/senses3.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.sensesquiz4', {
+    url: '/sensesquiz4',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/senses/senses4.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.sensesquiz5', {
+    url: '/sensesquiz5',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/senses/senses5.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.tastesquiz1', {
+    url: '/tastesquiz1',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/tastes/taste1.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.tastesquiz2', {
+    url: '/tastesquiz2',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/tastes/taste2.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.tastesquiz3', {
+    url: '/tastesquiz3',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/tastes/taste3.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.tastesquiz4', {
+    url: '/tastesquiz4',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/tastes/taste4.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.tastesquiz5', {
+    url: '/tastesquiz5',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/tastes/taste5.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
    .state('app.about', {
     url: '/about',
     views: {
