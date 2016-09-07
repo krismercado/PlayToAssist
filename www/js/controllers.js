@@ -38,7 +38,7 @@ angular.module('starter.controllers', [])
            console.log(user.validate);
           
            if(user.validate != 'false'){
-             $rootScope.user = user.username;
+             $rootScope.user = user.validate.id;
 			$location.path('/app/dashboard');
             }else{
                 $scope.showAlert('Invalid username or password.');	
@@ -62,6 +62,13 @@ angular.module('starter.controllers', [])
 	 $scope.showAlert = function(msg) {
 	   var alertPopup = $ionicPopup.alert({
 		 title: 'Warning Message',
+		 template: msg
+	   });
+	 };
+    
+     $scope.showAlert2 = function(msg) {
+	   var alertPopup = $ionicPopup.alert({
+		 title: 'Information',
 		 template: msg
 	   });
 	 };
@@ -1367,20 +1374,20 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
   
 .controller('QuizCtrl', function($http, $scope, $rootScope, $stateParams , $ionicModal,  $location) {
     
-      $scope.name = $rootScope.user;
-     $scope.endquiz = function(score) {
+      $scope.id = $rootScope.user;
+     $scope.endquiz = function(score,quiz_type) {
         $http({
           method: 'POST',
-          url: 'http://assistwebportal.com/',
+          url: 'http://assistwebportal.com/Main/studentscore',
            transformRequest: function(obj) {
             var str = [];
             for(var p in obj)
             str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
             return str.join("&");
            },
-          data: { username: $scope.name,space_type:item.space_type,location:item.location,price:item.price,comments:item.comments }
+          data: { user_id: $scope.id,quiz_type:quiz_type,quiz_score:score}
         }).then(function successCallback(response) {
-            $scope.showAlert('Information Posted!');	
+            $scope.showAlert2('Score Saved!');	
           }, function errorCallback(response) {
             // called asynchronously if an error occurs
             // or server returns response with an error status.
