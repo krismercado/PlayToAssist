@@ -7,8 +7,13 @@
         <br>
         <br>
         <center><img ng-src="img/triangle.jpg"/>
-            <h1><button class="button button-clear button-energized"><font color="black"><u><strong>T-R-I-A-N-G-L-E</strong></u></font></button></h1>
+            <h1><button ng-click="triangleaudio();" class="button button-clear button-energized"><font color="black"><u><strong>T-R-I-A-N-G-L-E</strong></u></font></button></h1>
             <u><h4><strong>Triangle has 3 sides</strong></h4></u>
+            <br>
+            <br>
+            <audio controls id="triangle">                                        
+                <source src="http://assistwebportal.com/sounds/triangle.mp3" type="audio/mpeg"> 
+            </audio>
         </center>
     </ion-content>
   </ion-modal-view>

@@ -5,8 +5,12 @@
     </ion-header-bar>
     <ion-content>
         <center><img ng-src="img/red.png"/>
-            <h1><button class="button button-stable"><font color="red"><u><strong>R-E-D</strong></u></font></button></h1>
+            <h1><button ng-click="redaudio();" class="button button-stable"><font color="red"><u><strong>R-E-D</strong></u></font></button></h1>
             <u><h4><strong>Red is the color of Apple.</strong></h4></u><img ng-src="img/apple.png"/>
+            <br><br>
+            <audio controls id="red">                                        
+                <source src="http://assistwebportal.com/sounds/red.mp3" type="audio/mpeg"> 
+            </audio>
         </center>
     </ion-content>
   </ion-modal-view>

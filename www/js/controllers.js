@@ -269,6 +269,38 @@ angular.module('starter.controllers', [])
   $scope.closeModal = function() {
     $scope.heart.hide();
   };
+  
+  $scope.rectangleaudio = function() {
+    document.getElementById('rectangle').play();
+  };
+  
+  $scope.circleaudio = function() {
+    document.getElementById('circle').play();
+  };
+  
+  $scope.ovalaudio = function() {
+    document.getElementById('oval').play();
+  };
+  
+  $scope.triangleaudio = function() {
+    document.getElementById('triangle').play();
+  };
+  
+  $scope.heartaudio = function() {
+    document.getElementById('heart').play();
+  };
+  
+  $scope.staraudio = function() {
+    document.getElementById('star').play();
+  };
+  
+  $scope.diamondaudio = function() {
+    document.getElementById('diamond').play();
+  };
+  
+  $scope.squareaudio = function() {
+    document.getElementById('square').play();
+  };
 })
 
 .controller('abcCtrl', function($scope, $stateParams , Profiles,  $ionicModal) {  
@@ -953,6 +985,86 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
   $scope.closeModal = function() {
     $scope.number20.hide();
   };
+  
+   $scope.number1audio = function() {
+    document.getElementById('number1').play();
+  };
+  
+  $scope.number2audio = function() {
+    document.getElementById('number2').play();
+  };
+  
+  $scope.number3audio = function() {
+    document.getElementById('number3').play();
+  };
+  
+  $scope.number4audio = function() {
+    document.getElementById('number4').play();
+  };
+  
+  $scope.number5audio = function() {
+    document.getElementById('number5').play();
+  };
+  
+  $scope.number6audio = function() {
+    document.getElementById('number6').play();
+  };
+  
+  $scope.number7audio = function() {
+    document.getElementById('number7').play();
+  };
+  
+  $scope.number8audio = function() {
+    document.getElementById('number8').play();
+  };
+  
+  $scope.number9audio = function() {
+    document.getElementById('number9').play();
+  };
+  
+  $scope.number10audio = function() {
+    document.getElementById('number10').play();
+  };
+  
+   $scope.number11audio = function() {
+    document.getElementById('number11').play();
+  };
+  
+  $scope.number12audio = function() {
+    document.getElementById('number12').play();
+  };
+  
+  $scope.number13audio = function() {
+    document.getElementById('number13').play();
+  };
+  
+  $scope.number14audio = function() {
+    document.getElementById('number14').play();
+  };
+  
+  $scope.number15audio = function() {
+    document.getElementById('number15').play();
+  };
+  
+  $scope.number16audio = function() {
+    document.getElementById('number16').play();
+  };
+  
+  $scope.number17audio = function() {
+    document.getElementById('number17').play();
+  };
+  
+  $scope.number18audio = function() {
+    document.getElementById('number18').play();
+  };
+  
+  $scope.number19audio = function() {
+    document.getElementById('number19').play();
+  };
+  
+  $scope.number20audio = function() {
+    document.getElementById('number20').play();
+  };
 })
 
 .controller('colorCtrl', function($scope, $stateParams , Profiles, $ionicModal) {    
@@ -1046,6 +1158,34 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
   $scope.closeModal = function() {
     $scope.pink.hide();
   };
+  
+  $scope.blueaudio = function() {
+    document.getElementById('blue').play();
+  };
+  
+  $scope.greenaudio = function() {
+    document.getElementById('green').play();
+  };
+  
+  $scope.orangeaudio = function() {
+    document.getElementById('orange').play();
+  };
+  
+  $scope.pinkaudio = function() {
+    document.getElementById('pink').play();
+  };
+  
+  $scope.purpleaudio = function() {
+    document.getElementById('purple').play();
+  };
+  
+  $scope.redaudio = function() {
+    document.getElementById('red').play();
+  };
+  
+  $scope.yellowaudio = function() {
+    document.getElementById('yellow').play();
+  };
 })
 
 .controller('sensesCtrl', function($scope, $stateParams , Profiles, $ionicModal) {
@@ -1113,6 +1253,26 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
   };
   $scope.closeModal = function() {
     $scope.tongue.hide();
+  };
+  
+  $scope.hearingaudio = function() {
+    document.getElementById('hearing').play();
+  };
+  
+  $scope.sightaudio = function() {
+    document.getElementById('sight').play();
+  };
+  
+  $scope.smellaudio = function() {
+    document.getElementById('smell').play();
+  };
+  
+  $scope.tasteaudio = function() {
+    document.getElementById('taste').play();
+  };
+  
+  $scope.touchaudio = function() {
+    document.getElementById('touch').play();
   };
   })
 
@@ -1182,6 +1342,26 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
   };
   $scope.closeModal = function() {
     $scope.spicy.hide();
+  };
+  
+  $scope.sweetaudio = function() {
+    document.getElementById('sweet').play();
+  };
+  
+  $scope.bitteraudio = function() {
+    document.getElementById('bitter').play();
+  };
+  
+  $scope.saltyaudio = function() {
+    document.getElementById('salty').play();
+  };
+  
+  $scope.souraudio = function() {
+    document.getElementById('sour').play();
+  };
+  
+  $scope.spicyaudio = function() {
+    document.getElementById('spicy').play();
   };
   })  
   

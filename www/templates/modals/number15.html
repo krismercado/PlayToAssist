@@ -5,7 +5,11 @@
     </ion-header-bar>
     <ion-content>
         <center><img ng-src="img/15.jpg"/><br>
-            <button class="button button-energized"><font color="black"><u><strong>Fifteen Cars</strong></u></font></button>
+            <button ng-click="number15audio();" class="button button-energized"><font color="black"><u><strong>Fifteen Cars</strong></u></font></button>
+            <br><br>
+             <audio controls id="number15">                                        
+                <source src="http://assistwebportal.com/sounds/15.mp3" type="audio/mpeg"> 
+            </audio>
         </center>
     </ion-content>
   </ion-modal-view>

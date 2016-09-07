@@ -7,8 +7,13 @@
         <br>
         <br>
         <center><img ng-src="img/square.jpg"/>
-            <h1><button class="button button-clear button-energized"><font color="black"><u><strong>S-Q-U-A-R-E</strong></u></font></button></h1>
+            <h1><button ng-click="squareaudio();" class="button button-clear button-energized"><font color="black"><u><strong>S-Q-U-A-R-E</strong></u></font></button></h1>
             <u><h4><strong>Square has 4 equal sides</strong></h4></u>
+            <br>
+            <br>
+            <audio controls id="square">                                        
+                <source src="http://assistwebportal.com/sounds/square.mp3" type="audio/mpeg"> 
+            </audio>
         </center>
     </ion-content>
   </ion-modal-view>

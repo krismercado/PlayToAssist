@@ -7,8 +7,13 @@
         <br>
         <br>
         <center><img ng-src="img/heart.jpg"/>
-            <h1><button class="button button-clear button-energized"><font color="black"><u><strong>H-E-A-R-T</strong></u></font></button></h1>
+            <h1><button ng-click="heartaudio();" class="button button-clear button-energized"><font color="black"><u><strong>H-E-A-R-T</strong></u></font></button></h1>
             <u><h4><strong>Heart is the shape for love.</strong></h4></u>
+            <br>
+            <br>
+            <audio controls id="heart">                                        
+                <source src="http://assistwebportal.com/sounds/heart.mp3" type="audio/mpeg"> 
+            </audio>
         </center>
     </ion-content>
   </ion-modal-view>

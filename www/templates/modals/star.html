@@ -7,8 +7,13 @@
         <br>
         <br>
         <center><img ng-src="img/star.jpg"/>
-            <h1><button class="button button-clear button-energized"><font color="black"><u><strong>S-T-A-R</strong></u></font></button></h1>
+            <h1><button ng-click="staraudio();" class="button button-clear button-energized"><font color="black"><u><strong>S-T-A-R</strong></u></font></button></h1>
             <u><h4><strong>Star has five corners.</strong></h4></u>
+            <br>
+            <br>
+            <audio controls id="star">                                        
+                <source src="http://assistwebportal.com/sounds/star.mp3" type="audio/mpeg"> 
+            </audio>
         </center>
     </ion-content>
   </ion-modal-view>
