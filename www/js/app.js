@@ -574,6 +574,50 @@ angular.module('starter', ['ionic', 'starter.controllers' , 'starter.services'])
 	 authStatus: true
   })
   
+   .state('app.alphaquiz2', {
+    url: '/alphaquiz2',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/alphabet/alpha2.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+   .state('app.alphaquiz3', {
+    url: '/alphaquiz3',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/alphabet/alpha3.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.alphaquiz4', {
+    url: '/alphaquiz4',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/alphabet/alpha4.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.alphaquiz5', {
+    url: '/alphaquiz5',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/alphabet/alpha5.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
    .state('app.about', {
     url: '/about',
     views: {
