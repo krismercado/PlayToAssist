@@ -1387,7 +1387,7 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
            },
           data: { user_id: $scope.id,quiz_type:quiz_type,quiz_score:score}
         }).then(function successCallback(response) {
-            $scope.showAlert2('Score Saved!');	
+            $scope.showAlert2('Score Saved! Your score is: '+score);	
              $location.path('/app/quiz');
           }, function errorCallback(response) {
             // called asynchronously if an error occurs
