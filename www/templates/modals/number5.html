@@ -1,15 +1,16 @@
 <ion-modal-view view-title="number5">
     <ion-header-bar>
       <h1 class="title">Number 5</h1>
-        <div class="button button-clear" ng-click="number5.hide()"><span class="icon ion-close"></span></div>
+        <div class="button button-clear" ng-click="number5.hide();n5audio();"><span class="icon ion-close"></span></div>
     </ion-header-bar>
     <ion-content>
         <center><img ng-src="img/5.jpg"/><br>
             <button ng-click="number5audio();" class="button button-energized"><font color="black"><u><strong>Five Cars</strong></u></font></button>
             <br><br>
+            <div style="visibility:hidden">
              <audio controls id="number5">                                        
                 <source src="img/5.mp3" type="audio/mpeg"> 
-            </audio>
+                </audio></div>
         </center>
     </ion-content>
   </ion-modal-view>

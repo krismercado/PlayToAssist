@@ -1,7 +1,7 @@
 <ion-modal-view view-title="sweet">
     <ion-header-bar>
       <h1 class="title"><strong>Spicy</strong></h1>
-         <div class="button button-clear" ng-click="spicy.hide()"><span class="icon ion-close"></span></div>
+         <div class="button button-clear" ng-click="spicy.hide();spicy1audio();"><span class="icon ion-close"></span></div>
     </ion-header-bar>
     <ion-content><center>
             <h4><strong>Food with spicy taste are:</strong></h4></center>
@@ -11,8 +11,9 @@
             <p style="font-family:Tahoma">Wasabi</p><img ng-src="img/wasabi.jpg"/></strong>
                 </div> 
             </div><br><br>
+                <div style="visibility:hidden">
         <audio controls id="spicy">                                        
                 <source src="img/spicy.mp3" type="audio/mpeg"> 
-            </audio></center>
+                    </audio></div></center>
     </ion-content>
   </ion-modal-view>

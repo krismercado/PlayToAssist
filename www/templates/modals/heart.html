@@ -1,7 +1,7 @@
 <ion-modal-view view-title="heart">
     <ion-header-bar>
       <h1 class="title">Heart</h1>
-        <div class="button button-clear" ng-click="heart.hide()"><span class="icon ion-close"></span></div>
+        <div class="button button-clear" ng-click="heart.hide();heartstopaudio();"><span class="icon ion-close"></span></div>
     </ion-header-bar>
     <ion-content>
         <br>
@@ -11,9 +11,10 @@
             <u><h4><strong>Heart is the shape for love.</strong></h4></u>
             <br>
             <br>
+            <div style="visibility:hidden">
             <audio controls id="heart">                                        
                 <source src="img/heart.mp3" type="audio/mpeg"> 
-            </audio>
+                </audio></div>
         </center>
     </ion-content>
   </ion-modal-view>

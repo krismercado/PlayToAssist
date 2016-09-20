@@ -1,14 +1,15 @@
 <ion-modal-view view-title="H">
     <ion-header-bar>
       <h1 class="title">H</h1>
-        <div class="button button-clear" ng-click="H.hide()"><span class="icon ion-close"></span></div>
+        <div class="button button-clear" ng-click="H.hide();Hhaudio();"><span class="icon ion-close"></span></div>
     </ion-header-bar>
     <ion-content>
         <center><img ng-src="img/H.jpg"/><br>
             <button ng-click="Haudio();" class="button button-energized"><font color="black"><u><strong>H is for Hammer</strong></u></font></button><br><br>
+            <div style="visibility:hidden">
             <audio controls id="H">                                        
                 <source src="img/H.mp3" type="audio/mpeg"> 
-            </audio>
+            </audio></div>
         </center>
     </ion-content>
   </ion-modal-view>

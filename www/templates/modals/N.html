@@ -1,14 +1,15 @@
 <ion-modal-view view-title="N">
     <ion-header-bar>
       <h1 class="title">N</h1>
-        <div class="button button-clear" ng-click="N.hide()"><span class="icon ion-close"></span></div>
+        <div class="button button-clear" ng-click="N.hide()Nnaudio();"><span class="icon ion-close"></span></div>
     </ion-header-bar>
     <ion-content>
         <center><img ng-src="img/N.jpg"/><br>
             <button ng-click="Naudio();" class="button button-energized"><font color="black"><u><strong>N is for Necklace</strong></u></font></button><br><br>
+            <div style="visibility:hidden">
             <audio controls id="N">                                        
                 <source src="img/N.mp3" type="audio/mpeg"> 
-            </audio>
+                </audio></div>
         </center>
     </ion-content>
   </ion-modal-view>

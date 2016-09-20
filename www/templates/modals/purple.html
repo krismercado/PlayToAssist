@@ -1,16 +1,17 @@
 <ion-modal-view view-title="purple">
     <ion-header-bar>
       <h1 class="title"><strong>Purple</strong></h1>
-         <div class="button button-clear" ng-click="purple.hide()"><span class="icon ion-close"></span></div>
+         <div class="button button-clear" ng-click="purple.hide();purple1audio();"><span class="icon ion-close"></span></div>
     </ion-header-bar>
     <ion-content>
         <center><img ng-src="img/purple.png"/>
             <h1><button ng-click="purpleaudio;" class="button button-stable"><font color="purple"><u><strong>P-U-R-P-L-E</strong></u></font></button></h1>
             <u><h4><strong>Purple is the color of Eggplant</strong></h4></u><img ng-src="img/eggplant.png"/>
             <br><br>
+            <div style="visibility:hidden">
             <audio controls id="purple">                                        
                 <source src="img/purple.mp3" type="audio/mpeg"> 
-            </audio>
+                </audio></div>
         </center>
     </ion-content>
   </ion-modal-view>

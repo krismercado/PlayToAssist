@@ -1,14 +1,16 @@
 <ion-modal-view view-title="A">
     <ion-header-bar>
       <h1 class="title">A</h1>
-        <div class="button button-clear" ng-click="A.hide()"><span class="icon ion-close"></span></div>
+        <div class="button button-clear" ng-click="A.hide();Aaaudio();"><span class="icon ion-close"></span></div>
     </ion-header-bar>
     <ion-content>
         <center><img ng-src="img/A.jpg"/><br>
             <button ng-click="Aaudio();" class="button button-energized"><font color="black"><u><strong>A is for Apple</strong></u></font></button><br><br>
+            <div style="visibility:hidden">
             <audio controls id="A">                                        
                 <source src="img/A.mp3" type="audio/mpeg"> 
             </audio>
+            </div>
         </center>
         
     </ion-content>

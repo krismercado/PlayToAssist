@@ -280,34 +280,63 @@ angular.module('starter.controllers', [])
   $scope.rectangleaudio = function() {
     document.getElementById('rectangle').play();
   };
+  $scope.rectanglestopaudio = function() {
+    document.getElementById('rectangle').pause();
+  };
   
   $scope.circleaudio = function() {
     document.getElementById('circle').play();
+  };
+  $scope.circlestopaudio = function() {
+    document.getElementById('circle').pause();
   };
   
   $scope.ovalaudio = function() {
     document.getElementById('oval').play();
   };
+  $scope.ovalstopaudio = function() {
+    document.getElementById('oval').pause();
+  };
   
   $scope.triangleaudio = function() {
     document.getElementById('triangle').play();
+  };
+  $scope.trianglestopaudio = function() {
+    document.getElementById('triangle').pause();
   };
   
   $scope.heartaudio = function() {
     document.getElementById('heart').play();
   };
+  $scope.heartstopaudio = function() {
+    document.getElementById('heart').pause();
+  };
   
   $scope.staraudio = function() {
     document.getElementById('star').play();
+  };
+  $scope.starstopaudio = function() {
+    document.getElementById('star').pause();
   };
   
   $scope.diamondaudio = function() {
     document.getElementById('diamond').play();
   };
+  $scope.diamondstopaudio = function() {
+    document.getElementById('diamond').pause();
+  };
   
   $scope.squareaudio = function() {
     document.getElementById('square').play();
   };
+  $scope.squarestopaudio = function() {
+    document.getElementById('square').pause();
+  };
+  
+  $scope.musicstopaudio = function() {
+    document.getElementById('music').pause();
+  };
+  
 })
 
 .controller('abcCtrl', function($scope, $stateParams , Profiles,  $ionicModal) {  
@@ -728,6 +757,85 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
     $scope.Zaudio = function() {
     document.getElementById('Z').play();
   };
+  
+  $scope.Aaaudio = function() {
+    document.getElementById('A').pause();
+  };
+     $scope.Bbaudio = function() {
+    document.getElementById('B').pause();
+  };
+     $scope.Ccaudio = function() {
+    document.getElementById('C').pause();
+  };
+    $scope.Ddaudio = function() {
+    document.getElementById('D').pause();
+  };
+    $scope.Eeaudio = function() {
+    document.getElementById('E').pause();
+  };
+    $scope.Ffaudio = function() {
+    document.getElementById('F').pause();
+  };
+    $scope.Ggaudio = function() {
+    document.getElementById('G').pause();
+  };
+    $scope.Hhaudio = function() {
+    document.getElementById('H').pause();
+  };
+    $scope.Iiaudio = function() {
+    document.getElementById('I').pause();
+  };
+    $scope.Jjaudio = function() {
+    document.getElementById('J').pause();
+  };
+    $scope.Kkaudio = function() {
+    document.getElementById('K').pause();
+  };
+    $scope.Llaudio = function() {
+    document.getElementById('L').pause();
+  };
+    $scope.Mmaudio = function() {
+    document.getElementById('M').pause();
+  };
+    $scope.Nnaudio = function() {
+    document.getElementById('N').pause();
+  };
+    $scope.Ooaudio = function() {
+    document.getElementById('O').pause();
+  };
+    $scope.Ppaudio = function() {
+    document.getElementById('P').pause();
+  };
+    $scope.Qqaudio = function() {
+    document.getElementById('Q').pause();
+  };
+    $scope.Rraudio = function() {
+    document.getElementById('R').pause();
+  };
+    $scope.Ssaudio = function() {
+    document.getElementById('S').pause();
+  };
+    $scope.Ttaudio = function() {
+    document.getElementById('T').pause();
+  };
+    $scope.Uuaudio = function() {
+    document.getElementById('U').pause();
+  };
+    $scope.Vvaudio = function() {
+    document.getElementById('V').pause();
+  };
+    $scope.Wwaudio = function() {
+    document.getElementById('W').pause();
+  };
+    $scope.Xxaudio = function() {
+    document.getElementById('X').pause();
+  };
+    $scope.Yyaudio = function() {
+    document.getElementById('Y').pause();
+  };
+    $scope.Zzaudio = function() {
+    document.getElementById('Z').pause();
+  };
     
 })
 
@@ -1072,6 +1180,86 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
   $scope.number20audio = function() {
     document.getElementById('number20').play();
   };
+  
+  $scope.n1audio = function() {
+    document.getElementById('number1').pause();
+  };
+  
+  $scope.n2audio = function() {
+    document.getElementById('number2').pause();
+  };
+  
+  $scope.n3audio = function() {
+    document.getElementById('number3').pause();
+  };
+  
+  $scope.n4audio = function() {
+    document.getElementById('number4').pause();
+  };
+  
+  $scope.n5audio = function() {
+    document.getElementById('number5').pause();
+  };
+  
+  $scope.n6audio = function() {
+    document.getElementById('number6').pause();
+  };
+  
+  $scope.n7audio = function() {
+    document.getElementById('number7').pause();
+  };
+  
+  $scope.n8audio = function() {
+    document.getElementById('number8').pause();
+  };
+  
+  $scope.n9audio = function() {
+    document.getElementById('number9').pause();
+  };
+  
+  $scope.n10audio = function() {
+    document.getElementById('number10').pause();
+  };
+  
+   $scope.n11audio = function() {
+    document.getElementById('number11').pause();
+  };
+  
+  $scope.n12audio = function() {
+    document.getElementById('number12').pause();
+  };
+  
+  $scope.n13audio = function() {
+    document.getElementById('number13').pause();
+  };
+  
+  $scope.n14audio = function() {
+    document.getElementById('number14').pause();
+  };
+  
+  $scope.n15audio = function() {
+    document.getElementById('number15').pause();
+  };
+  
+  $scope.n16audio = function() {
+    document.getElementById('number16').pause();
+  };
+  
+  $scope.n17audio = function() {
+    document.getElementById('number17').pause();
+  };
+  
+  $scope.n18audio = function() {
+    document.getElementById('number18').pause();
+  };
+  
+  $scope.n19audio = function() {
+    document.getElementById('number19').pause();
+  };
+  
+  $scope.n20audio = function() {
+    document.getElementById('number20').pause();
+  };
 })
 
 .controller('colorCtrl', function($scope, $stateParams , Profiles, $ionicModal) {    
@@ -1193,6 +1381,34 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
   $scope.yellowaudio = function() {
     document.getElementById('yellow').play();
   };
+  
+  $scope.blue1audio = function() {
+    document.getElementById('blue').pause();
+  };
+  
+  $scope.green1audio = function() {
+    document.getElementById('green').pause();
+  };
+  
+  $scope.orange1audio = function() {
+    document.getElementById('orange').pause();
+  };
+  
+  $scope.pink1audio = function() {
+    document.getElementById('pink').pause();
+  };
+  
+  $scope.purpl1eaudio = function() {
+    document.getElementById('purple').pause();
+  };
+  
+  $scope.red1audio = function() {
+    document.getElementById('red').pause();
+  };
+  
+  $scope.yellow1audio = function() {
+    document.getElementById('yellow').pause();
+  };
 })
 
 .controller('sensesCtrl', function($scope, $stateParams , Profiles, $ionicModal) {
@@ -1280,6 +1496,26 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
   
   $scope.touchaudio = function() {
     document.getElementById('touch').play();
+  };
+  
+  $scope.hearing1audio = function() {
+    document.getElementById('hearing').pause();
+  };
+  
+  $scope.sight1audio = function() {
+    document.getElementById('sight').pause();
+  };
+  
+  $scope.smell1audio = function() {
+    document.getElementById('smell').pause();
+  };
+  
+  $scope.taste1audio = function() {
+    document.getElementById('taste').pause();
+  };
+  
+  $scope.touch1audio = function() {
+    document.getElementById('touch').pause();
   };
   })
 
@@ -1370,6 +1606,26 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
   $scope.spicyaudio = function() {
     document.getElementById('spicy').play();
   };
+  
+  $scope.sweet1audio = function() {
+    document.getElementById('sweet').pause();
+  };
+  
+  $scope.bitter1audio = function() {
+    document.getElementById('bitter').pause();
+  };
+  
+  $scope.salty1audio = function() {
+    document.getElementById('salty').pause();
+  };
+  
+  $scope.sour1audio = function() {
+    document.getElementById('sour').pause();
+  };
+  
+  $scope.spicy1audio = function() {
+    document.getElementById('spicy').pause();
+  };
   })  
   
 .controller('QuizCtrl', function($http, $scope, $rootScope, $stateParams , $ionicModal,  $location, $ionicNavBarDelegate,$ionicSideMenuDelegate, $ionicHistory) {
@@ -1438,6 +1694,10 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
 })
 
 .controller('DashCtrl', function($scope, $stateParams , Profiles) {
+    
+  $scope.musicstopaudio = function() {
+    document.getElementById('music').pause();
+  };
 	/*
     $scope.showFilterBar = function () {
             filterBarInstance = $ionicFilterBar.show({
