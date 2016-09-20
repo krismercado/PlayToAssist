@@ -1372,7 +1372,7 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
   };
   })  
   
-.controller('QuizCtrl', function($http, $scope, $rootScope, $stateParams , $ionicModal,  $location) {
+.controller('QuizCtrl', function($http, $scope, $rootScope, $stateParams , $ionicModal,  $location, $ionicNavBarDelegate,$ionicSideMenuDelegate, $ionicHistory) {
     
       $scope.id = $rootScope.user;
      $scope.endquiz = function(score,quiz_type) {
@@ -1387,8 +1387,13 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
            },
           data: { user_id: $scope.id,quiz_type:quiz_type,quiz_score:score}
         }).then(function successCallback(response) {
-            $scope.showAlert2('Score Saved!');	
+            $scope.showAlert2('Score Saved! Your score is: '+score);	
+            $ionicHistory.nextViewOptions({
+                historyRoot: true
+            });
              $location.path('/app/quiz');
+
+           
           }, function errorCallback(response) {
             // called asynchronously if an error occurs
             // or server returns response with an error status.
