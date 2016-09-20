@@ -1433,7 +1433,7 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
 })
 
 .controller('DashCtrl', function($scope, $stateParams , Profiles) {
-    /*
+	/*
     $scope.showFilterBar = function () {
             filterBarInstance = $ionicFilterBar.show({
                 items: $scope.profiles,
