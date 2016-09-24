@@ -11,7 +11,7 @@ angular.module('starter.controllers', [])
 
   // Form data for the login modal
   $scope.loginData = {};
-
+      $rootScope.parent = true;
   //--------------------------------------------
    $scope.login = function(user) {
 			
@@ -39,7 +39,18 @@ angular.module('starter.controllers', [])
           
            if(user.validate != 'false'){
              $rootScope.user = user.validate.id;
+             $rootScope.role = user.validate.role;
+             user.username = '';
+             user.password = '';
+              
 			$location.path('/app/dashboard');
+               
+               if($rootScope.role == 'parent'){
+                   $rootScope.parent = false;
+               }
+               
+               console.log( user.parent );
+              
             }else{
                 $scope.showAlert('Invalid username or password.');	
             }
