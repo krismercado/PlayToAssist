@@ -1,14 +1,15 @@
 <ion-modal-view view-title="T">
     <ion-header-bar>
       <h1 class="title">T</h1>
-        <div class="button button-clear" ng-click="T.hide()"><span class="icon ion-close"></span></div>
+        <div class="button button-clear" ng-click="T.hide();Ttaudio();"><span class="icon ion-close"></span></div>
     </ion-header-bar>
     <ion-content>
         <center><img ng-src="img/T.jpg"/><br>
             <button ng-click="Taudio();" class="button button-energized"><font color="black"><u><strong>T is for Television</strong></u></font></button><br><br>
+            <div style="visibility:hidden">
             <audio controls id="T">                                        
-                <source src="http://assistwebportal.com/sounds/T.mp3" type="audio/mpeg"> 
-            </audio>
+                <source src="img/T.mp3" type="audio/mpeg"> 
+                </audio></div>
         </center>
     </ion-content>
   </ion-modal-view>

@@ -1,15 +1,16 @@
 <ion-modal-view view-title="number6">
     <ion-header-bar>
       <h1 class="title">Number 6</h1>
-        <div class="button button-clear" ng-click="number6.hide()"><span class="icon ion-close"></span></div>
+        <div class="button button-clear" ng-click="number6.hide();n6audio();"><span class="icon ion-close"></span></div>
     </ion-header-bar>
     <ion-content>
         <center><img ng-src="img/6.jpg"/><br>
             <button ng-click="number6audio();" class="button button-energized"><font color="black"><u><strong>Six Trucks</strong></u></font></button>
             <br><br>
+            <div style="visibility:hidden">
              <audio controls id="number6">                                        
-                <source src="http://assistwebportal.com/sounds/6.mp3" type="audio/mpeg"> 
-            </audio>
+                <source src="img/6.mp3" type="audio/mpeg"> 
+                </audio></div>
         </center>
     </ion-content>
   </ion-modal-view>

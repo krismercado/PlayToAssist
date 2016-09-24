@@ -1,14 +1,15 @@
 <ion-modal-view view-title="U">
     <ion-header-bar>
       <h1 class="title">U</h1>
-        <div class="button button-clear" ng-click="U.hide()"><span class="icon ion-close"></span></div>
+        <div class="button button-clear" ng-click="U.hide();Uuaudio();"><span class="icon ion-close"></span></div>
     </ion-header-bar>
     <ion-content>
         <center><img ng-src="img/U.jpg"/><br>
             <button ng-click="Uaudio();" class="button button-energized"><font color="black"><u><strong>U is for Umbrella</strong></u></font></button><br><br>
+            <div style="visibility:hidden">
             <audio controls id="U">                                        
-                <source src="http://assistwebportal.com/sounds/U.mp3" type="audio/mpeg"> 
-            </audio>
+                <source src="img/U.mp3" type="audio/mpeg"> 
+                </audio></div>
         </center>
     </ion-content>
   </ion-modal-view>
