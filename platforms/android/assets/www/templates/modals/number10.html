@@ -1,0 +1,16 @@
+<ion-modal-view view-title="number10">
+    <ion-header-bar>
+      <h1 class="title">Number 10</h1>
+        <div class="button button-clear" ng-click="number10.hide();n10audio();"><span class="icon ion-close"></span></div>
+    </ion-header-bar>
+    <ion-content>
+        <center><img ng-src="img/10.jpg"/><br>
+            <button ng-click="number10audio();" class="button button-energized"><font color="black"><u><strong>Ten Cars</strong></u></font></button>
+            <br><br>
+            <div style="visibility:hidden">
+             <audio controls id="number10">                                        
+                <source src="img/10.mp3" type="audio/mpeg"> 
+                </audio></div>
+        </center>
+    </ion-content>
+  </ion-modal-view>

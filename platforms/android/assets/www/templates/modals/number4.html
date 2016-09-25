@@ -1,0 +1,16 @@
+<ion-modal-view view-title="number4">
+    <ion-header-bar>
+      <h1 class="title">Number 4</h1>
+        <div class="button button-clear" ng-click="number4.hide();n4audio();"><span class="icon ion-close"></span></div>
+    </ion-header-bar>
+    <ion-content>
+        <center><img ng-src="img/4.jpg"/><br>
+            <button ng-click="number4audio();" class="button button-energized"><font color="black"><u><strong>Four Airplanes</strong></u></font></button>
+            <br><br>
+            <div style="visibility:hidden">
+             <audio controls id="number4">                                        
+                <source src="img/4.mp3" type="audio/mpeg"> 
+                </audio></div>
+        </center>
+    </ion-content>
+  </ion-modal-view>

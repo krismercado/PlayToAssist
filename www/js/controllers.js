@@ -1685,12 +1685,19 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
       }).then(function(modal) {
         $scope.wrong = modal;
       });
-      $scope.openWrongModal = function() {
+      $scope.openWrongModal = function(data) {
         $scope.wrong.show();
+		   console.log(data);
+       $rootScope.quizloc = data;
       };
       $scope.closeModal = function() {
         $scope.wrong.hide();
       };
+	
+	 $scope.nextquestion = function(){
+         $scope.correct.hide();
+        $location.path($rootScope.quizloc);
+    }
 })
 
 .controller('DashCtrl', function($scope, $stateParams , Profiles) {

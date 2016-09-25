@@ -4,11 +4,12 @@
       <ion-nav-back-button>
       </ion-nav-back-button>
       <ion-nav-buttons side="secondary">
-          
-            <i class="button button-icon icon ion-android-walk" ng-click="logout()"></i>
+          <button class="button" ng-click="logout()">
+            <i class="icon ion-android-walk"></i>
+          </button>
       </ion-nav-buttons>
       <ion-nav-buttons side="left">
-        <button id="leftMenu" class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+        <button id="leftMenu" class="button button-icon button-clear ion-navicon"  menu-toggle="left"></button>
       </ion-nav-buttons>
         
     </ion-nav-bar>
@@ -24,11 +25,12 @@
     <ion-content >
       <ion-list id="menuLinks">
         <ion-item menu-close href="#/app/dashboard"> Dashboard </ion-item>
-          <ion-item menu-close href="#"> Quiz </ion-item>
-          <ion-item menu-close href="#"> Self </ion-item>
-          <ion-item menu-close href="#/app/hygene"> Hygene </ion-item>
+          <ion-item menu-close href="#/app/quiz"> Quiz </ion-item>
+          <ion-item menu-close href="#/app/tutorial"> Tutorials </ion-item>
+          <ion-item menu-close href="#/app/hygene"> Hygiene </ion-item>
           <ion-item menu-close href="#/app/stories"> Stories </ion-item>
-          <ion-item menu-close href="#/app/tutorials"> Tutorial </ion-item>
+          <ion-item menu-close href="#/app/tutorials">Video Tutorial </ion-item>
+        <ion-item menu-close href="#/app/about"> About Us </ion-item>
       </ion-list>
     </ion-content>
   </ion-side-menu>

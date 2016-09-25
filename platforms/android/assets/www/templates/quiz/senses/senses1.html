@@ -1,0 +1,28 @@
+<ion-view view-title="5 Senses Quiz">
+  <ion-content>
+
+      <div class="card">
+          <div class="item item-text-wrap">
+            <center><h1>You can smell with your?</h1><br>
+                </center>
+              <br><br>
+              <center>
+                <div class="row">
+              <div class="col">
+                <a class="button button-clear" ng-click="openWrongModal()" class="button button-royal"><font color="black"><strong>A) Eyes</strong></font><img ng-src="img/eye1.png"/></a>
+              </div>  
+
+              <div class="col">
+                <a class="button button-clear" ng-click="openCorrectModal('/app/sensesquiz2')" class="button button-royal"><font color="black"><strong>B) Nose</strong></font><img ng-src="img/nose1.png"/></a><br><br><br><br><br><br>
+              </div>  
+            </div>
+              </center>
+          </div>
+      </div>
+      <button class="button button-block button-assertive" ng-click="endquiz(20,'Senses Quiz')">
+      End Quiz
+      </button>
+      
+      
+ </ion-content>
+</ion-view>

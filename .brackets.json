@@ -55,6 +55,17 @@
         "G:/PlayToAssist/platforms/android/build/intermediates/assets/debug/www/lib/ionic/js/angular/angular.js",
         "G:/PlayToAssist/platforms/android/build/intermediates/assets/debug/www/lib/ionic/js/angular/angular.min.js",
         "G:/PlayToAssist/platforms/android/build/intermediates/assets/debug/www/lib/ionic/js/angular-ui/angular-ui-router.js",
-        "G:/PlayToAssist/platforms/android/build/intermediates/assets/debug/www/lib/ionic/js/angular-ui/angular-ui-router.min.js"
+        "G:/PlayToAssist/platforms/android/build/intermediates/assets/debug/www/lib/ionic/js/angular-ui/angular-ui-router.min.js",
+        "C:/Users/user/PlayToAssist1/platforms/android/cordova/lib/build.js",
+        "C:/Users/user/PlayToAssist1/platforms/android/cordova/lib/check_reqs.js",
+        "C:/Users/user/PlayToAssist1/platforms/android/cordova/lib/ConsoleLogger.js",
+        "C:/Users/user/PlayToAssist1/platforms/android/cordova/lib/device.js",
+        "C:/Users/user/PlayToAssist1/platforms/android/cordova/lib/emulator.js",
+        "C:/Users/user/PlayToAssist1/platforms/android/cordova/lib/log.js",
+        "C:/Users/user/PlayToAssist1/platforms/android/cordova/lib/pluginHandlers.js",
+        "C:/Users/user/PlayToAssist1/platforms/android/cordova/lib/prepare.js",
+        "C:/Users/user/PlayToAssist1/platforms/android/cordova/lib/retry.js",
+        "C:/Users/user/PlayToAssist1/platforms/android/cordova/lib/run.js",
+        "C:/Users/user/PlayToAssist1/platforms/android/cordova/Api.js"
     ]
 }

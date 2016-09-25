@@ -1,0 +1,18 @@
+<ion-modal-view view-title="ear">
+    <ion-header-bar>
+      <h1 class="title"><strong>Sense of Hearing</strong></h1>
+         <div class="button button-clear" ng-click="ear.hide();hearing1audio();"><span class="icon ion-close"></span></div>
+    </ion-header-bar>
+    <ion-content>
+        <center><img ng-src="img/ear.png"/>
+            <h1><button ng-click="hearingaudio();" class="button button-stable"><font color="black"><u><strong>Sense of Hearing</strong></u></font></button></h1>
+            <u><h4><strong>You can hear with your ears.</strong></h4></u>
+             <br>
+            <br>
+            <div style="visibility:hidden">
+            <audio controls id="hearing">                                        
+                <source src="img/hearing.mp3" type="audio/mpeg"> 
+                </audio></div>
+        </center>
+    </ion-content>
+  </ion-modal-view>

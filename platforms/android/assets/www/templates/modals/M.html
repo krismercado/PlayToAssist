@@ -1,0 +1,15 @@
+<ion-modal-view view-title="M">
+    <ion-header-bar>
+      <h1 class="title">M</h1>
+        <div class="button button-clear" ng-click="M.hide();Mmaudio();"><span class="icon ion-close"></span></div>
+    </ion-header-bar>
+    <ion-content>
+        <center><img ng-src="img/M.jpg"/><br>
+            <button ng-click="Maudio();" class="button button-energized"><font color="black"><u><strong>M is for Mouse</strong></u></font></button><br><br>
+            <div style="visibility:hidden">
+            <audio controls id="M">                                        
+                <source src="img/M.mp3" type="audio/mpeg"> 
+                </audio></div>
+        </center>
+    </ion-content>
+  </ion-modal-view>

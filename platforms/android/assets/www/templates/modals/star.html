@@ -1,0 +1,20 @@
+<ion-modal-view view-title="star">
+    <ion-header-bar>
+      <h1 class="title">Star</h1>
+        <div class="button button-clear" ng-click="star.hide();starstopaudio();"><span class="icon ion-close"></span></div>
+    </ion-header-bar>
+    <ion-content>
+        <br>
+        <br>
+        <center><img ng-src="img/star.jpg"/>
+            <h1><button ng-click="staraudio();" class="button button-clear button-energized"><font color="black"><u><strong>S-T-A-R</strong></u></font></button></h1>
+            <u><h4><strong>Star has five corners.</strong></h4></u>
+            <br>
+            <br>
+            <div style="visibility:hidden">
+            <audio controls id="star">                                        
+                <source src="img/star.mp3" type="audio/mpeg"> 
+                </audio></div>
+        </center>
+    </ion-content>
+  </ion-modal-view>

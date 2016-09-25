@@ -1,0 +1,34 @@
+<ion-view view-title="Alphabet Quiz">
+  <ion-content>
+
+      <div class="card">
+          <div class="item item-text-wrap">
+            <center>
+                <img ng-src="img/alpha/apple2.jpg"/>
+                <h1> _ P P L E</h1><br>
+                </center>
+              <br><br>
+              <center>
+                <div class="row">
+              
+              <div class="col">
+                <a class="button button-primary" ng-click="openWrongModal()" class="button button-royal"><font color="black"><strong>B</strong></font></a>
+              </div>  
+                    
+                    <div class="col">
+                <a class="button button-primary" ng-click="openCorrectModal('/app/alphaquiz2')" class="button button-royal"><font color="black"><strong>A</strong></font></a>
+              </div>  
+              <div class="col">
+                <a class="button button-primary" ng-click="openWrongModal()" class="button button-royal"><font color="black"><strong>C</strong></font></a><br><br><br><br><br><br>
+              </div>  
+            </div>
+              </center>
+          </div>
+      </div>
+      <button class="button button-block button-assertive" ng-click="endquiz(20,'Alphabet Quiz')">
+      End Quiz
+      </button>
+      
+      
+ </ion-content>
+</ion-view>
