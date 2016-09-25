@@ -1755,14 +1755,41 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
           data: {}
         }).then(function successCallback(response) {
             $scope.scores = response.data;
-            console.log($scope.scores);
+           
        
                for (var i = 0; i <  $scope.scores.length; i++) {
-                   console.log($scope.scores[i]);
+                   alert($scope.scores[i]);
                 if (response.data[i].quiz_type === "Alphabet Quiz") {
                   $scope.grades[i] =  $scope.scores[i];
                 }
               }
+                $scope.grades =[];
+                $scope.grades2 =[];
+                $scope.grades3 =[];
+                $scope.grades4 =[];
+                $scope.grades5 =[];  $scope.grades6 =[];
+               angular.forEach($scope.scores, function(value, key) {
+                   
+                         if (value['quiz_type'] == "Alphabet Quiz"){
+                            $scope.grades.splice(0,0,{"date_created":value.date_created,"quiz_score":value.quiz_score});
+                         }
+                         else if (value['quiz_type'] == "Color Quiz"){
+                            $scope.grades2.splice(0,0,{"date_created":value.date_created,"quiz_score":value.quiz_score});
+                         }
+                         else if (value['quiz_type'] == "Counting Quiz"){
+                            $scope.grades3.splice(0,0,{"date_created":value.date_created,"quiz_score":value.quiz_score});
+                         }
+                         else if (value['quiz_type'] == "Senses Quiz"){
+                            $scope.grades4.splice(0,0,{"date_created":value.date_created,"quiz_score":value.quiz_score});
+                         }
+                         else if (value['quiz_type'] == "Shapes Quiz"){
+                            $scope.grades5.splice(0,0,{"date_created":value.date_created,"quiz_score":value.quiz_score});
+                         }
+                         else if (value['quiz_type'] == "Taste Quiz"){
+                            $scope.grades6.splice(0,0,{"date_created":value.date_created,"quiz_score":value.quiz_score});
+                         }
+                    //console.log($scope.grades);
+                 });
            
           }, function errorCallback(response) {
             // called asynchronously if an error occurs
