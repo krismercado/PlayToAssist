@@ -25,11 +25,11 @@
     <ion-content >
       <ion-list id="menuLinks">
         <ion-item menu-close href="#/app/dashboard"> Dashboard </ion-item>
-          <ion-item menu-close href="#/app/quiz"> Quiz </ion-item>
-          <ion-item menu-close href="#/app/tutorial"> Tutorials </ion-item>
-          <ion-item menu-close href="#/app/hygene"> Hygiene </ion-item>
-          <ion-item menu-close href="#/app/stories"> Stories </ion-item>
-          <ion-item menu-close href="#/app/tutorials">Video Tutorial </ion-item>
+          <ion-item menu-close href="#/app/quiz" ng-if="$root.parent">Quiz</ion-item>
+          <ion-item menu-close href="#/app/tutorial" ng-if="$root.parent"> Tutorials </ion-item>
+          <ion-item menu-close href="#/app/hygene" ng-if="$root.parent"> Hygiene </ion-item>
+          <ion-item menu-close href="#/app/stories" ng-if="$root.parent"> Stories </ion-item>
+          <ion-item menu-close href="#/app/tutorials" ng-if="$root.parent">Video Tutorial </ion-item>
         <ion-item menu-close href="#/app/about"> About Us </ion-item>
       </ion-list>
     </ion-content>

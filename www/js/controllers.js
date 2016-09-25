@@ -11,7 +11,7 @@ angular.module('starter.controllers', [])
 
   // Form data for the login modal
   $scope.loginData = {};
-
+      $rootScope.parent = true;
   //--------------------------------------------
    $scope.login = function(user) {
 			
@@ -39,7 +39,18 @@ angular.module('starter.controllers', [])
           
            if(user.validate != 'false'){
              $rootScope.user = user.validate.id;
+             $rootScope.role = user.validate.role;
+             user.username = '';
+             user.password = '';
+              
 			$location.path('/app/dashboard');
+               
+               if($rootScope.role == 'parent'){
+                   $rootScope.parent = false;
+               }
+               
+               console.log( user.parent );
+              
             }else{
                 $scope.showAlert('Invalid username or password.');	
             }
@@ -1632,6 +1643,12 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
     
       $scope.id = $rootScope.user;
      $scope.endquiz = function(score,quiz_type) {
+         
+          if ($rootScope.quizwrong) {
+                score = score - $rootScope.quizwrong;
+            }
+       
+         console.log('score - quizwrong: '+ score +" - "+$rootScope.quizwrong);
         $http({
           method: 'POST',
           url: 'http://assistwebportal.com/Main/studentscore',
@@ -1648,7 +1665,7 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
                 historyRoot: true
             });
              $location.path('/app/quiz');
-
+             $rootScope.quizwrong = 0;
            
           }, function errorCallback(response) {
             // called asynchronously if an error occurs
@@ -1666,7 +1683,6 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
       });
       $scope.openCorrectModal = function(data) {
         $scope.correct.show();
-          console.log(data);
        $rootScope.quizloc = data;
           
       };
@@ -1676,8 +1692,20 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
     
     $scope.nextquestion = function(){
          $scope.correct.hide();
+        $scope.wrong.hide();
         $location.path($rootScope.quizloc);
     }
+    
+    $scope.lastquiz = function(wrong,quiztype){
+          if ($rootScope.quizwrong) {
+               $scope.tempdata = $rootScope.quizwrong;
+               $rootScope.quizwrong = $scope.tempdata + wrong;
+            } else {
+                  $rootScope.quizwrong = wrong;
+            }
+         $scope.endquiz(100,quiztype);
+    }
+    
     
     $ionicModal.fromTemplateUrl('templates/modals/wrong.html', {
         scope: $scope,
@@ -1685,10 +1713,27 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
       }).then(function(modal) {
         $scope.wrong = modal;
       });
+<<<<<<< HEAD
       $scope.openWrongModal = function(data) {
         $scope.wrong.show();
 		   console.log(data);
        $rootScope.quizloc = data;
+=======
+      $scope.openWrongModal = function(data,wrong) {
+        $scope.wrong.show();
+        $rootScope.quizloc = data;
+          
+          if ($rootScope.quizwrong) {
+               $scope.tempdata = $rootScope.quizwrong;
+               $rootScope.quizwrong = $scope.tempdata + wrong;
+            } else {
+                  $rootScope.quizwrong = wrong;
+            }
+
+        
+          console.log('wrong: '+$rootScope.quizwrong);
+      
+>>>>>>> 064fc929b84e16708ff254f38aedfc58475a8caf
       };
       $scope.closeModal = function() {
         $scope.wrong.hide();
