@@ -1713,12 +1713,7 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
       }).then(function(modal) {
         $scope.wrong = modal;
       });
-<<<<<<< HEAD
-      $scope.openWrongModal = function(data) {
-        $scope.wrong.show();
-		   console.log(data);
-       $rootScope.quizloc = data;
-=======
+
       $scope.openWrongModal = function(data,wrong) {
         $scope.wrong.show();
         $rootScope.quizloc = data;
@@ -1730,10 +1725,6 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
                   $rootScope.quizwrong = wrong;
             }
 
-        
-          console.log('wrong: '+$rootScope.quizwrong);
-      
->>>>>>> 064fc929b84e16708ff254f38aedfc58475a8caf
       };
       $scope.closeModal = function() {
         $scope.wrong.hide();
