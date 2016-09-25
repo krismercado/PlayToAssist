@@ -35,9 +35,10 @@ angular.module('starter.controllers', [])
         }).then(function successCallback(response) {
             //$scope.user = response.data;
            user.validate = response.data;
-           console.log(user.validate);
+          
           
            if(user.validate != 'false'){
+                console.log(user.validate);
              $rootScope.user = user.validate.id;
              $rootScope.role = user.validate.role;
              user.username = '';
@@ -47,9 +48,10 @@ angular.module('starter.controllers', [])
                
                if($rootScope.role == 'parent'){
                    $rootScope.parent = false;
+                   $rootScope.child = user.validate.child;
+                   
+                   
                }
-               
-               console.log( user.parent );
               
             }else{
                 $scope.showAlert('Invalid username or password.');	
@@ -66,7 +68,10 @@ angular.module('starter.controllers', [])
 	};
 
   //--------------------------------------------
-  $scope.logout = function() {    $location.path('/app/login');   };
+  $scope.logout = function() {    
+      $rootScope.parent= '';
+      $location.path('/app/login');   
+  };
 
   //--------------------------------------------
    // An alert dialog
@@ -1734,6 +1739,37 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
          $scope.correct.hide();
         $location.path($rootScope.quizloc);
     }
+})
+
+.controller('GradesCtrl', function($http, $scope, $rootScope, $stateParams) {
+    
+   $http({
+          method: 'POST',
+          url: 'http://assistwebportal.com/Main/studentgrades/'+$rootScope.child,
+           transformRequest: function(obj) {
+            var str = [];
+            for(var p in obj)
+            str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+            return str.join("&");
+           },
+          data: {}
+        }).then(function successCallback(response) {
+            $scope.scores = response.data;
+            console.log($scope.scores);
+       
+               for (var i = 0; i <  $scope.scores.length; i++) {
+                   console.log($scope.scores[i]);
+                if (response.data[i].quiz_type === "Alphabet Quiz") {
+                  $scope.grades[i] =  $scope.scores[i];
+                }
+              }
+           
+          }, function errorCallback(response) {
+            // called asynchronously if an error occurs
+            // or server returns response with an error status.
+           console.log('error');
+       });
+    
 })
 
 .controller('DashCtrl', function($scope, $stateParams , Profiles) {

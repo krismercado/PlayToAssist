@@ -79,6 +79,17 @@ angular.module('starter', ['ionic', 'starter.controllers' , 'starter.services'])
 	 authStatus: true
   })
   
+   .state('app.grades', {
+    url: '/grades',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/grades.html',
+		controller: 'GradesCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
    .state('app.hygene', {
     url: '/hygene',
     views: {
