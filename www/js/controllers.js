@@ -1695,11 +1695,7 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
         $scope.correct.hide();
       };
     
-    $scope.nextquestion = function(){
-         $scope.correct.hide();
-        $scope.wrong.hide();
-        $location.path($rootScope.quizloc);
-    }
+  
     
     $scope.lastquiz = function(wrong,quiztype){
           if ($rootScope.quizwrong) {
@@ -1737,6 +1733,7 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
 	
 	 $scope.nextquestion = function(){
          $scope.correct.hide();
+          $scope.wrong.hide();
         $location.path($rootScope.quizloc);
     }
 })
