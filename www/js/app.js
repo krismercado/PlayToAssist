@@ -464,6 +464,39 @@ angular.module('starter', ['ionic', 'starter.controllers' , 'starter.services'])
 	 authStatus: true
   })
   
+  .state('app.colorquiz8', {
+    url: '/colorquiz8',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/colors/colorquiz8.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.colorquiz9', {
+    url: '/colorquiz9',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/colors/colorquiz9.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
+  .state('app.colorquiz10', {
+    url: '/colorquiz10',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/quiz/colors/colorquiz10.html',
+		controller: 'QuizCtrl'
+      }
+     },
+	 authStatus: true
+  })
+  
   .state('app.sensesquiz1', {
     url: '/sensesquiz1',
     views: {

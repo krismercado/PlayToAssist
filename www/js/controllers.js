@@ -1651,6 +1651,9 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
          
           if ($rootScope.quizwrong) {
                 score = score - $rootScope.quizwrong;
+              if (score < 0){
+                  score = 0;
+              }
             }
        
          console.log('score - quizwrong: '+ score +" - "+$rootScope.quizwrong);
@@ -1666,9 +1669,11 @@ $ionicModal.fromTemplateUrl('templates/modals/T.html', {
           data: { user_id: $scope.id,quiz_type:quiz_type,quiz_score:score}
         }).then(function successCallback(response) {
             $scope.showAlert2('Score Saved! Your score is: '+score);	
+           
             $ionicHistory.nextViewOptions({
                 historyRoot: true
             });
+            
              $location.path('/app/quiz');
              $rootScope.quizwrong = 0;
            
